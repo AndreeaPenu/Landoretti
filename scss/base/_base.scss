@@ -1,7 +1,59 @@
 /* VARIABLES */
 $font-stack: Arial, sans-serif;
+$gray: #eaeaea;
+$white: #ffffff;
 
 body {
     font: 100% $font-stack;
-    padding-top: 50px;
+   // padding-top: 50px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.icon {
+    width: 1.653in;
+    height: 1.625in;
+}
+
+.popular {
+    background-color: $gray;
+    height: 700px;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.card-sm {
+    width: 4.347in;
+    height: 2.361in;
+}
+
+.card-bg {
+    width: 9.764in;
+    height: 4.819in;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.footer {
+    background-color: $white;
+    height:500px;
 }

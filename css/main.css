@@ -1,8 +1,82 @@
 /* VARIABLES */
-/* line 4, ../scss/base/_base.scss */
+/* line 6, ../scss/base/_base.scss */
 body {
   font: 100% Arial, sans-serif;
-  padding-top: 50px;
+}
+
+/* Center align the text within the three columns below the carousel */
+/* line 12, ../scss/base/_base.scss */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* line 16, ../scss/base/_base.scss */
+.marketing h2 {
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* line 22, ../scss/base/_base.scss */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* line 27, ../scss/base/_base.scss */
+.icon {
+  width: 1.653in;
+  height: 1.625in;
+}
+
+/* line 32, ../scss/base/_base.scss */
+.popular {
+  background-color: #eaeaea;
+  height: 700px;
+}
+
+/* line 37, ../scss/base/_base.scss */
+h1 {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* line 42, ../scss/base/_base.scss */
+.card-sm {
+  width: 4.347in;
+  height: 2.361in;
+}
+
+/* line 47, ../scss/base/_base.scss */
+.card-bg {
+  width: 9.764in;
+  height: 4.819in;
+}
+
+/* line 52, ../scss/base/_base.scss */
+.card img {
+  object-fit: cover;
+}
+
+/* line 56, ../scss/base/_base.scss */
+.footer {
+  background-color: white;
+  height: 500px;
+}
+
+/* line 3, ../scss/layout/_footer.scss */
+.footer-nav {
+  border-bottom: 4px solid #01a6a0;
+}
+
+/* line 7, ../scss/layout/_footer.scss */
+.logo2 {
+  width: 1.431in;
+  height: 1.944in;
+  position: absolute;
+  z-index: 2345;
+  margin-left: 16%;
 }
 
 /* VARIABLES */
@@ -19,7 +93,6 @@ body {
   height: 1.944in;
   position: absolute;
   z-index: 2345;
-  margin-top: -50px;
   margin-left: 16%;
 }
 
@@ -47,22 +120,21 @@ body {
 .blue-nav {
   border-left: 1px solid #0a1e75;
   padding-left: 30px;
-  padding-right: 20px;
 }
 
-/* line 47, ../scss/layout/_nav.scss */
+/* line 46, ../scss/layout/_nav.scss */
 .blue-nav1 {
   padding: 0 20px;
 }
 
-/* line 51, ../scss/layout/_nav.scss */
+/* line 50, ../scss/layout/_nav.scss */
 .navbar-dark .navbar-nav .nav-link {
   color: #4e4e4e;
   font-weight: 700;
   margin-left: 20px;
 }
 
-/* line 57, ../scss/layout/_nav.scss */
+/* line 56, ../scss/layout/_nav.scss */
 .bg-dark, .navbar-dark {
   background-color: #eaeaea !important;
 }
