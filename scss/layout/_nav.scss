@@ -1,0 +1,59 @@
+/* VARIABLES */
+$darkBlue: #0a1e75;
+$blueGreen: #01a6a0;
+$gray: #eaeaea;
+$darkGray: #4e4e4e;
+
+.fa, 
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link {
+    color: $darkBlue;
+}
+
+.logo {
+    width: 1.431in;
+    height: 1.944in;
+    position: absolute;
+    z-index: 2345;
+    margin-top: -50px;
+    //margin-left: 310px;
+    margin-left: 16%;
+}
+
+.form-control {
+    padding: .2rem 1.5rem;
+}
+
+.form-inline {
+    //margin-right: 290px;
+    margin-right: 15%;
+}
+
+.lijntje {
+    border-top: 4px solid $blueGreen;
+}
+
+.navbar-nav {
+    //margin-left: 480px;
+    margin-left: 25.5%;
+}
+
+.blue-nav {
+    border-left: 1px solid $darkBlue;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.blue-nav1 {
+    padding: 0 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $darkGray;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.bg-dark, .navbar-dark {
+    background-color: $gray!important;
+}
