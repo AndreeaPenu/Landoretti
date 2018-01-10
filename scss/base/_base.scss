@@ -2,6 +2,8 @@
 $font-stack: Arial, sans-serif;
 $gray: #eaeaea;
 $white: #ffffff;
+$darkBlue: #0a1e75;
+$blueGreen: #01a6a0;
 
 body {
     font: 100% $font-stack;
@@ -13,15 +15,16 @@ body {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
 .marketing h2 {
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 15px;
-    
 }
+
 .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .icon {
@@ -37,6 +40,7 @@ body {
 h1 {
     text-align: center;
     padding: 40px 0;
+    color: $darkBlue;
 }
 
 .card-sm {
@@ -55,41 +59,39 @@ h1 {
 
 .footer {
     background-color: $white;
-    height:500px;
+    height: 500px;
 }
 
-.container-fluid{
+.container-fluid {
     max-width: 1330px;
     min-width: 1330px;
     margin: 0 auto;
 }
 
-.carousel-control-prev-icon{
-    width:40px;
-    height:45px;
-    background-color:black;
-    margin:0;
-    background-image : url(../img/left-chevron.png);
-
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 45px;
+    background-color: black;
+    margin: 0;
+    background-image: url(../img/left-chevron.png);
 }
 
-.carousel-control-next, .carousel-control-prev{
-    width:40px;
-    opacity:0.3;
+.carousel-control-next, .carousel-control-prev {
+    width: 40px;
+    opacity: 0.3;
 }
 
-.carousel-control-next-icon{
-    width:40px;
-    height:45px;
-    background-color:black;
-    margin:0;
+.carousel-control-next-icon {
+    width: 40px;
+    height: 45px;
+    background-color: black;
+    margin: 0;
     background-image : url(../img/right-chevron.png);
-
 }
 
-.padd{
-    padding:18px 10px;
-    background-color:black;
+.padd {
+    padding: 18px 10px;
+    background-color: black;
 }
 
 .carousel-indicators li {
@@ -97,12 +99,42 @@ h1 {
     height: 18px;
     width: 18px;
     border: 1px solid white;
-    opacity:0.7;
-    margin:10px;
+    opacity: 0.7;
+    margin: 10px;
 
 }
 
 .carousel-indicators .active{
-    opacity:.8;
+    opacity: .8;
 }
 
+#carousel-home {
+    position: relative;
+}
+
+.overlay-text {
+    opacity: 1!important;
+    line-height: 150%;
+}
+
+.overlay {
+    background-color: $darkBlue;
+    opacity: .4;
+    position: absolute;
+    top: 800px; 
+    left: 280px;
+    width: 70%;
+    padding: 50px;
+}
+
+.decoration-round {
+    width: 40px;
+    height: 40px;
+    background-color: $blueGreen;
+    border: 8px solid $white;
+    position: absolute;
+    top: 780px;
+    left: 260px;
+    z-index: 1;
+    border-radius: 25px;
+}

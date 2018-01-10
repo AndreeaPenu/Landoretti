@@ -20,7 +20,7 @@ $betweenGray: #7e7e7e;
 
 .footer-wrapper {
     margin-top: 100px;
-    //margin-bottom:80px;
+    //margin-bottom: 80px;
     border-top: 1px solid $lightGray;
 }
 
@@ -36,7 +36,7 @@ $betweenGray: #7e7e7e;
     padding-left:0;
 }
 
-.footer-wrapper a{
+.footer-wrapper a {
     color: $blueGreen;
 }
 
@@ -45,39 +45,38 @@ $betweenGray: #7e7e7e;
     border-left: 1px solid $lightGray;
 }
 
-.f-icon{
+.f-icon {
     display: inline-block!important;
-    margin-right:5px;
+    margin-right: 5px;
 }
 
-.f-search{
-    width:180px!important;
-    height:25px;
+.f-search {
+    width: 180px!important;
+    height: 25px;
 }
 
-.footer-search{
-    margin-bottom:20px!important;
-    margin-top:10px!important;
+.footer-search {
+    margin-bottom: 20px!important;
+    margin-top: 10px!important;
 }
 
-.top{
-    margin-top:40px;
+.top {
+    margin-top: 40px;
 }
 
-h6{
-    margin-bottom:1px;
+h6 {
+    margin-bottom: 1px;
 }
 
-.copy{
+.copy {
     position: absolute;
     bottom: 0;
     left: 0;
     padding-left: 30px;
-    padding-bottom:10px;
-    color:$betweenGray;
- 
+    padding-bottom: 10px;
+    color: $betweenGray;
 }
 
-.col-sm-3{
-    padding-bottom:60px;
+.col-sm-3 {
+    padding-bottom: 60px;
 }
