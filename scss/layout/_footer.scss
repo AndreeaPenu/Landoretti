@@ -1,4 +1,7 @@
 $blueGreen: #01a6a0;
+$lightGray: #e5e5e5;
+$darkGray: #4e4e4e;
+$betweenGray: #7e7e7e;
 
 .footer-nav {
     border-bottom: 4px solid $blueGreen;
@@ -9,7 +12,72 @@ $blueGreen: #01a6a0;
     height: 1.944in;
     position: absolute;
     z-index: 2345;
-   // margin-top: -50px;
+    margin-top: -132px;
     //margin-left: 310px;
-    margin-left: 16%;
+    margin-left: 15%; //16%
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-wrapper {
+    margin-top: 100px;
+    //margin-bottom:80px;
+    border-top: 1px solid $lightGray;
+}
+
+.footer-wrapper h6 {
+    font-weight: 700;
+}
+
+.footer-wrapper ul li {
+    list-style: none;
+}
+
+.footer-wrapper ul {
+    padding-left:0;
+}
+
+.footer-wrapper a{
+    color: $blueGreen;
+}
+
+.footer-rechts {
+    padding-left: 30px;
+    border-left: 1px solid $lightGray;
+}
+
+.f-icon{
+    display: inline-block!important;
+    margin-right:5px;
+}
+
+.f-search{
+    width:180px!important;
+    height:25px;
+}
+
+.footer-search{
+    margin-bottom:20px!important;
+    margin-top:10px!important;
+}
+
+.top{
+    margin-top:40px;
+}
+
+h6{
+    margin-bottom:1px;
+}
+
+.copy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 30px;
+    padding-bottom:10px;
+    color:$betweenGray;
+ 
+}
+
+.col-sm-3{
+    padding-bottom:60px;
 }

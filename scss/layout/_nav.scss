@@ -15,13 +15,15 @@ $darkGray: #4e4e4e;
     height: 1.944in;
     position: absolute;
     z-index: 2345;
-   // margin-top: -50px;
+    margin-top: -20px;
     //margin-left: 310px;
-    margin-left: 16%;
+    margin-left: 15.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+//search form top
 .form-control {
-    padding: .2rem 1.5rem;
+    padding: 0.2rem 2rem; //.2rem 1.5rem;
 }
 
 .form-inline {
@@ -33,26 +35,48 @@ $darkGray: #4e4e4e;
     border-top: 4px solid $blueGreen;
 }
 
+//grijze nav
 .navbar-nav {
     //margin-left: 480px;
-    margin-left: 25.5%;
+    margin-left: 26.5%; //25.5%
 }
 
 .blue-nav {
-    border-left: 1px solid $darkBlue;
-    padding-left: 30px;
+   // border-left: 1px solid $darkBlue;
+   padding-right:15px;
+}
+
+.fa-user{
+    padding-right:8px;
+}
+.line{
+    border-left:1px solid $darkBlue;
+    padding-left:25px;
 }
 
 .blue-nav1 {
-    padding: 0 20px;
+    padding: 0 0px; //0 20px
+    margin-left:10px;
+    margin-right:10px;
 }
 
+//li grijze nav
 .navbar-dark .navbar-nav .nav-link {
     color: $darkGray;
     font-weight: 700;
-    margin-left: 20px;
+    margin-left: 0px; //20px
+    padding-right: 40px;
 }
 
 .bg-dark, .navbar-dark {
     background-color: $gray!important;
+}
+
+.navbar-right{
+    margin-left:280px;
+}
+
+.taal{
+    padding-right:10px!important;
+    color:$darkBlue!important;
 }
