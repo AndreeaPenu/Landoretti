@@ -480,3 +480,95 @@ td {
     vertical-align: middle;
     text-align: center;
 }
+
+
+// -------------- photo gallery
+.small-images img{
+    display: inline-block;
+  }
+  .small-images img{
+    border: 1px solid black;
+    width:240px;
+    height:120px;
+    object-fit: cover;
+    margin-top:10px;
+    margin-right:5px;
+
+  }
+  .small-images:hover{
+    cursor: pointer;
+  }
+
+  #big-image img{
+      height:460px;
+      width:740px;
+  }
+
+  #detail .col-sm-3, #detail .col-sm-8{
+      display:inline-block;
+  }
+
+  .detail{
+    vertical-align: top;
+  }
+
+  .detail-title, .detail-text, .detail-time{
+      text-align:right;
+  }
+
+  .detail-title, .detail-time{
+    border-bottom:1px solid $gray;
+}
+
+  .detail-title{
+    line-height: 20%;
+  }
+  .detail-title p {
+      color:$darkBlue;
+  }
+
+  .detail-time .detail-hour {
+      color:$blueGreen;
+  }
+  .detail-time{
+      padding:20px 0;
+      line-height: 20%;
+  }
+
+  .detail-text{
+    padding:20px 0;
+  }
+
+  .price{
+      border:1px solid $gray;
+      text-align:right;
+
+  }
+
+  .extra-info .col-sm-8, .extra-info .col-sm-3{
+      display:inline-block;
+  }
+  .extra-info{
+      border:1px solid $gray;
+      margin-top:40px;
+      padding:20px 10px;
+  }
+  .extra-right{
+      border-left:1px solid $gray;
+  }
+  .extra-right ul{
+      list-style:none;
+  }
+
+  .sort-by{
+      padding:20px;
+      border-bottom:1px solid $gray;
+      padding-left:16%;
+  }
+
+  // --------------- overzicht ----------------//
+
+.auction-1{
+      display:inline-block!important;
+}
+
