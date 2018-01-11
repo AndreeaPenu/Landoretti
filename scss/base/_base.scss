@@ -455,3 +455,28 @@ label{
     padding: 20px 10px;
 }
 
+.watchlist img{
+    width:140px;
+    height:140px;
+    display:inline-block;
+    float:left;
+}
+
+table, th, td, tr{
+    border:1px solid $gray;
+}
+table{
+    width: 100%;
+}
+
+th{
+    height: 50px;
+    text-align:center;
+    background-color:$gray;
+}
+
+td {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
