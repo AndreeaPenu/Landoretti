@@ -138,3 +138,320 @@ h1 {
     z-index: 1;
     border-radius: 25px;
 }
+
+
+// -------------profile------------ //
+.overlay-text-profile {
+    opacity: 1!important;
+    line-height: 150%;
+}
+
+.overlay-profile {
+    background-color: $darkBlue;
+    opacity: .4;
+    position: absolute;
+    top: 170px; 
+    left: 1150px;
+    width: 20%;
+    padding: 50px;
+}
+
+.decoration-round-profile {
+    width: 40px;
+    height: 40px;
+    background-color: $blueGreen;
+    border: 8px solid $white;
+    position: absolute;
+    top: 150px;
+    left: 1130px;
+    z-index: 1;
+    border-radius: 25px;
+}
+body,html{
+    height:100%;
+}
+.hero-image{
+    background-image: url("../img/plaat.jpg");
+    height:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    // mirror image
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.visit{
+    background-color:$white;
+    color:$blueGreen;
+    position: absolute;
+    left: 1150px;
+    top:470px;
+    width:20%;
+    height:80px;
+    padding:25px;
+    font-size:1.5rem;
+}
+
+#profile h2{
+    font-size:3rem;
+    padding:40px 0;
+    
+}
+
+.info-card{
+    border: 1px solid $gray;
+}
+
+.info-card ul{
+    list-style:none;
+}
+
+.info-card .col-sm-4{
+    display:inline-block
+}
+
+.info-card h3{
+    padding:20px;
+}
+
+.numbers{
+    border-left: 1px solid $gray;
+    margin-bottom:20px;
+}
+
+//---------------------------------------
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell.is-selected {
+    background: #ED2;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .gallery-cell{
+      width:24%;
+      height:300px;
+  }
+
+  .gallery-cell img{
+      z-index:1;
+      width:100%;
+      height:100%;
+  }
+
+  .gallery-cell:before {
+      content:none;
+  }
+
+  .element-style{
+      height:300px;
+  }
+
+  .flickity-page-dots .dot{
+      display:none!important;
+  }
+  
+  .flickity-prev-next-button.previous{
+      left:0!important;
+      padding:150px 0;
+      background:black;
+      opacity:0.5;
+  }
+
+  .flickity-prev-next-button.next{
+      right:0!important;
+      padding:150px 0;
+      background:black;
+      opacity:0.5;
+  }
+
+  .flickity-prev-next-button{
+      border-radius:0!important;
+  }
+
+  //------------------------------------------//
+  .auction-body{
+      z-index:3!important;
+      color:black;
+      padding-top:30px;
+      padding-bottom: 0px;
+      padding-left: 30px;
+      padding-right:30px;
+  }
+
+  .auction{
+      padding-bottom:150px;
+      padding-top:40px;
+  }
+
+  .auction h3{
+      padding:20px 0;
+  }
+
+  .auction-details{
+      color:$darkBlue!important;
+  }
+
+  .flickity-viewport{
+    overflow:visible!important;
+  }
+
+  .auction-time{
+      border-bottom:1px solid $gray;
+      display:inline-block;
+      padding-bottom:15px;
+      padding-top:15px;
+      margin-left:30px;
+      //padding-left:10px;
+      padding-right:15px;
+  }
+
+  .auction-visit{
+      border:1px solid $gray;
+      background-color:#f7f7f7;
+      color:$darkBlue;
+      display:inline-block;
+      padding-top:15px;
+      padding-bottom:15px;
+      padding-left:10px;
+      padding-right:10px;
+  }
+
+  .breadcrumbs{
+      color:$blueGreen;
+      margin-top:40px;
+      font-weight: 600;
+
+  }
+
+  //------- FAQ ------//
+  .fast-questions{
+      border:1px solid $gray;
+      padding:50px;
+      margin: 0 auto;
+    }
+
+  .f-question{
+      color:$blueGreen;
+      display:inline-block;
+      margin-left:50px;
+  }
+
+  .search-button{
+      border:1px solid $gray;
+      background-color:#f7f7f7;
+      color:$darkBlue;
+      float:right;
+      padding:10px;
+      text-align:center;
+
+  }
+
+  .fq{
+    margin-bottom:100px;
+  }
+
+  .questions .col-sm-2, .questions .col-sm-8{
+      display:inline-block;
+  }
+
+.QandA .col-sm-8 p{
+    vertical-align:top;
+}
+
+.QandA{
+    border-bottom:1px solid $gray;
+    margin:30px 0;
+}
+.title-q{
+    color:$darkBlue;
+    font-size:1.5em;
+}
+
+.title-a{
+    font-size:1.5em;
+}
+
+#search #name, #search #artist{
+    width:40%;
+    background-color:$gray;
+    padding:10px;
+}
+#search #info{
+    width:60%;
+    background-color:$gray;
+    padding:10px;
+}
+
+label{
+    color:$darkBlue;
+    font-size:1.5rem;
+}
+
+.btn-primary{
+    border-radius:0;
+    background-color:rgba(54, 59, 54, 0.467);
+    border-color:rgba(54, 59, 54, 0.467);
+}
+
+#search h2{
+    padding:40px 0;
+}
+
+.s-overview{
+    margin-top:50px;
+}
+
+.s-overview .col-sm-8, .s-overview .col-sm-3{
+    display:inline-block;
+}
+
+.overview{
+    border:1px solid $gray;
+    padding:20px;
+}
+
+.overview p{
+    line-height:50%;
+}
+
+.own{
+    border:1px solid $gray;
+    background-color:$gray;
+    color:$darkBlue;
+    padding: 20px 10px;
+}
+
