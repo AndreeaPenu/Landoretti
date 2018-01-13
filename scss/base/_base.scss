@@ -571,4 +571,74 @@ td {
 .auction-1{
       display:inline-block!important;
 }
+.overzicht-art{
+
+}
+.card-lg{
+
+}
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.footer{
+    clear:both;
+}
+
+#overzicht .col-sm-5, #overzicht .col-sm-3{
+    padding-left:0!important;
+}
+#overzicht .auction-1{
+    padding-left:0!important;
+    padding-right:0!important;
+}
+
+#overzicht .auction-body{
+    z-index:3!important;
+    color:black;
+    padding-top:30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+#overzicht .auction{
+    padding-bottom:150px;
+    padding-top:40px;
+}
+
+#overzicht .auction h3{
+    padding:20px 0;
+}
+
+#overzicht .auction-details{
+    color:$darkBlue!important;
+}
+
+#overzicht .auction-time{
+    border-bottom:1px solid $gray;
+    display:inline-block;
+    padding-bottom:15px;
+    padding-top:15px;
+    margin-left:30px;
+    //padding-left:10px;
+    padding-right:15px;
+}
+
+#overzicht .auction-visit{
+    border:1px solid $gray;
+    background-color:#f7f7f7;
+    color:$darkBlue;
+    display:inline-block;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+// --------- newAuction --------------//
 

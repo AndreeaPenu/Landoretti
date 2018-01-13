@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/flickity.css" media="screen">
 
   </head>
-  <body id="overzicht">
+  <body id="myAuction">
        
     <!-- White navbar --> 
     <a href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>
@@ -108,200 +108,129 @@
             <p>VISIT AUCTION ></p>
         </div>
 
-        <!-- sort by -->
-        <div class=" sort-by">
-            <p><strong>SORT BY:</strong> ending soonest | ending latest | new auctions | popular auctions</p>
-        </div>
         <!-- breadcrumbs -->
         <div class="container-fluid">
-            <p class="breadcrumbs">Home > Auctions</p>
+            <p class="breadcrumbs">Home > Jasper Poppe > My auctions > New auction</p>
         </div>
         
+        <!-- FAQ -->
+        <div class="container-fluid">
+            <h2>Add a new auction</h2>
+        </div>
+        <div class="container-fluid">
 
-        <!-- Overzicht -->
-
-        <!-- Art showoff -->
-        <div class="overzicht-art">
-          <div class="container-fluid">
-
-            
-
-              <div class=" col col-sm-5 left">
-                <div class="card">
-                  <img class="card-img-top card-lg" src="img/man.jpg" alt="Card image cap">
-                </div>
+            <form>
+            <div class="form-group col-md-4">
+                <label for="select-style"></label>
+                <select class="form-control" id="select-style">
+                  <option>Style</option>
+                  <option>Abstract</option>
+                  <option>African American</option>
+                  <option>Asian Contemporary</option>
+                  <option>Conceptual</option>
+                  <option>Contemporary</option>
+                  <option>Emerging Artists</option>
+                  <option>Figurative</option>
+                  <option>Middle Eastern Contemporary</option>
+                  <option>Minimalism</option>
+                  <option>Modern</option>
+                  <option>Pop</option>
+                  <option>Urban</option>
+                  <option>Vintage Photographs</option>
+                </select>
               </div>
-             
-                
-                <div class="row">
- <div class=" col col-sm-5 auction-1 right">
-              <img src="img/mockup1.jpg" alt="">
-                  <div class="auction-body">
-                        <p class="auction-details">1979, Salvador Dali</p>
-                        <h4>Dance of Time |||</h4>
-                        <p>€ 8.900</p>
-                  </div>
-                
-                  <div class="auction-footer">
-                        <div class="auction-time">
-                                25d 14u 44m
-                        </div>
-                        <div class="auction-visit">
-                                VISIT AUCTION >
-                        </div>
-                  </div>
-            </div>
 
-    
-            <div class="col col-sm-5 auction-1 right">
-            <img src="img/mockup1.jpg" alt="">
-                <div class="auction-body">
-                    <p class="auction-details">1979, Salvador Dali</p>
-                    <h4>Dance of Time |||</h4>
-                    <p>€ 8.900</p>
-                </div>
-                <div class="auction-footer">
-                    <div class="auction-time">
-                        25d 14u 44m
-                    </div>
-                    <div class="auction-visit">
-                        VISIT AUCTION >
-                    </div>
-                </div>
-          
-            </div>
+              <div class="form-group col-md-4">
+                <label for="title">Auction title</label>
+                <input type="text" class="form-control" id="title" placeholder="Auction title">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" id="year" placeholder="XXXX">
+              </div>
 
-                </div>
-             
-                
+              <div class="form-group col-md-4">
+                <label for="width">Width</label>
+                <input type="text" class="form-control" id="width" placeholder="XXXX">
+              </div>
 
-                <div class="row">
-                     <div class=" col col-sm-5 auction-1 right">
-              <img src="img/mockup1.jpg" alt="">
-                  <div class="auction-body">
-                        <p class="auction-details">1979, Salvador Dali</p>
-                        <h4>Dance of Time |||</h4>
-                        <p>€ 8.900</p>
-                  </div>
-                
-                  <div class="auction-footer">
-                        <div class="auction-time">
-                                25d 14u 44m
-                        </div>
-                        <div class="auction-visit">
-                                VISIT AUCTION >
-                        </div>
-                  </div>
-            </div>
+              <div class="form-group col-md-4">
+                <label for="height">Height</label>
+                <input type="text" class="form-control" id="height" placeholder="XXXX">
+              </div>
 
-    
-            <div class="col col-sm-5 auction-1 right">
-            <img src="img/mockup1.jpg" alt="">
-                <div class="auction-body">
-                    <p class="auction-details">1979, Salvador Dali</p>
-                    <h4>Dance of Time |||</h4>
-                    <p>€ 8.900</p>
-                </div>
-                <div class="auction-footer">
-                    <div class="auction-time">
-                        25d 14u 44m
-                    </div>
-                    <div class="auction-visit">
-                        VISIT AUCTION >
-                    </div>
-                </div>
-          
-            </div>
+              <div class="form-group col-md-4">
+                <label for="depth">Depth (optional)</label>
+                <input type="text" class="form-control" id="depth" placeholder="XXXX">
+              </div>
 
-                </div>
-                
-           
-    
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="3" placeholder="Describe your auction as thorough as possible."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="condition">Condition</label>
+                <textarea class="form-control" id="condition" rows="3" placeholder="What's the condition of this artwork?"></textarea>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="origin">Origin</label>
+                <input type="text" class="form-control" id="origin" placeholder="What's the origin of the artwork?">
+              </div>
+
+              <div class="form-group">
+                <label for="photos">Photos</label>
+                <p>Please upload one picture with the signature of the artwork and one picture of the artwork.
+                    You can upload up to 3 pictures with a maximum of 10MB each.
+                </p>
+                <input type="file" class="form-control-file" id="photos">
+              </div>
+
+              <h3>Pricing</h3>
+
+              <div class="form-group col-md-4">
+                <label for="minPrice">Minimum estimate price</label>
+                <input type="text" class="form-control" id="minPrice" placeholder="€ XXXX">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="maxPrice">Maximum estimate price</label>
+                <input type="text" class="form-control" id="maxPrice" placeholder="€ XXXX">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="buyoutPrice">Buyout price (optional)</label>
+                <input type="text" class="form-control" id="buyoutPrice" placeholder="€ XXXX">
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="endDate">End date</label>
+                <input type="date" class="form-control" id="endDate">
+              </div>
               
-           
-          </div>
-        </div>
-        <!-- Art row -->
+              <h4>Attention</h4>
+              <p>You can not change the information after adding this auction.
+                  If you're not certain about the information of your artwork, please ask for help.
+                  We will answer your question as soon as possible.
+              </p>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  I Agree To The Terms & Conditions
+                </label>
+              </div>
+
+              <div class="btn btn-primary" type="submit">
+                  ADD AUCTION
+              </div>
+              <p>ASK A QUESTION ></p>
 
 
-<div class="container-fluid">
-    <div class="auction">
-        <div class="col-sm-3 auction-1 right">
-            <img src="img/mockup1.jpg" alt="">
-            <div class="auction-body">
-                    <p class="auction-details">1979, Salvador Dali</p>
-                    <h4>Dance of Time |||</h4>
-                    <p>€ 8.900</p>
-            </div>
-            <div class="auction-footer">
-                    <div class="auction-time">
-                            25d 14u 44m
-                    </div>
-                    <div class="auction-visit">
-                            VISIT AUCTION >
-                    </div>
-            </div>
-              
+            </form>
         </div>
 
-        <div class="col-sm-3 auction-1 right">
-                <img src="img/mockup1.jpg" alt="">
-                <div class="auction-body">
-                        <p class="auction-details">1979, Salvador Dali</p>
-                        <h4>Dance of Time |||</h4>
-                        <p>€ 8.900</p>
-                </div>
-                <div class="auction-footer">
-                        <div class="auction-time">
-                                25d 14u 44m
-                        </div>
-                        <div class="auction-visit">
-                                VISIT AUCTION >
-                        </div>
-                </div>
-                  
-        </div>
-
-        
-        <div class="col-sm-3 auction-1 right">
-            <img src="img/mockup1.jpg" alt="">
-            <div class="auction-body">
-                    <p class="auction-details">1979, Salvador Dali</p>
-                    <h4>Dance of Time |||</h4>
-                    <p>€ 8.900</p>
-            </div>
-            <div class="auction-footer">
-                    <div class="auction-time">
-                            25d 14u 44m
-                    </div>
-                    <div class="auction-visit">
-                            VISIT AUCTION >
-                    </div>
-            </div>
-              
-    </div>
-    
-    <div class="col-sm-3 auction-1 right">
-        <img src="img/mockup1.jpg" alt="">
-        <div class="auction-body">
-                <p class="auction-details">1979, Salvador Dali</p>
-                <h4>Dance of Time |||</h4>
-                <p>€ 8.900</p>
-        </div>
-        <div class="auction-footer">
-                <div class="auction-time">
-                        25d 14u 44m
-                </div>
-                <div class="auction-visit">
-                        VISIT AUCTION >
-                </div>
-        </div>
-          
-</div>
-            
-    </div>
-</div>
-
+       
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-wrapper">
