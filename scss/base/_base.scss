@@ -1,9 +1,11 @@
 /* VARIABLES */
 $font-stack: Arial, sans-serif;
 $gray: #eaeaea;
+$darkGray: #4e4e4e;
 $white: #ffffff;
 $darkBlue: #0a1e75;
 $blueGreen: #01a6a0;
+$blue: #0120a6;
 
 body {
     font: 100% $font-stack;
@@ -16,41 +18,68 @@ body {
     text-align: center;
 }
 
-.marketing h2 {
+.marketing h2, .marketing h3 {
     font-weight: 400;
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: $darkGray;
 }
 
 .marketing .col-lg-4 p {
     margin-right: 10px;
     margin-left: 10px;
+    color: $darkGray;
 }
 
+.how-icon{
+    padding:0 60px;
+}
 .icon {
-    width: 1.653in;
-    height: 1.625in;
+    width: 110px;
+    height: 110px;
 }
 
 .popular {
     background-color: $gray;
-    height: 700px;
+    height: 580px;
+}
+
+.arrow{
+    border: 1px solid $blue;
+    border-radius: 100px;
+    padding:5px;
 }
 
 h1 {
     text-align: center;
     padding: 40px 0;
     color: $darkBlue;
+    font-weight:100!important;
 }
 
+.card{
+    margin-left:25px;
+    width: 310px;
+    height: 165px;
+    margin-bottom:10px;
+}
 .card-sm {
-    width: 4.347in;
-    height: 2.361in;
+    
+    width: 310px;
+    height: 165px;
 }
 
 .card-bg {
-    width: 9.764in;
-    height: 4.819in;
+    width: 690px;
+    height: 340px;
+    
+}
+#home .col-sm-4{
+    padding-right:0px!important;
+}
+
+#home .col-sm-8{
+    padding-left:0px!important;
 }
 
 .card img {
@@ -63,8 +92,8 @@ h1 {
 }
 
 .container-fluid {
-    max-width: 1330px;
-    min-width: 1330px;
+    max-width: 1100px;
+    min-width: 1100px;
     margin: 0 auto;
 }
 
@@ -89,18 +118,26 @@ h1 {
     background-image : url(../img/right-chevron.png);
 }
 
+.car-photo{
+    position:relative;
+    top:-15px;
+}
+
 .padd {
-    padding: 18px 10px;
+    padding: 18px 0px;
     background-color: black;
 }
 
+.carousel-inner{
+    max-height:850px;
+}
 .carousel-indicators li {
     border-radius: 50%;
-    height: 18px;
-    width: 18px;
-    border: 1px solid white;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $white;
     opacity: 0.7;
-    margin: 10px;
+    margin: 1px 9px;
 
 }
 
@@ -114,56 +151,73 @@ h1 {
 
 .overlay-text {
     opacity: 1!important;
+    color:$white;
     line-height: 150%;
+    font-size:15px;
+    word-break:break-all;
 }
 
 .overlay {
-    background-color: $darkBlue;
-    opacity: .4;
+    background-color:$blue;
+    opacity:.6;
     position: absolute;
-    top: 800px; 
-    left: 280px;
-    width: 70%;
-    padding: 50px;
+    top: 575px; 
+    left: 265px;
+    width: 66%;
+    padding: 30px 50px;
 }
 
 .decoration-round {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: $blueGreen;
-    border: 8px solid $white;
+    border: 6px solid $white;
     position: absolute;
-    top: 780px;
-    left: 260px;
+    top: 560px;
+    left: 250px;
     z-index: 1;
     border-radius: 25px;
 }
+
+
 
 
 // -------------profile------------ //
 .overlay-text-profile {
     opacity: 1!important;
     line-height: 150%;
+    color:$white;
+}
+
+.overlay-profile h3, .overlay-profile p{
+    color:$white;
+    padding-top:20px;
+    padding-bottom:0px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.overlay-h3-profile{
+    border-bottom: 1px solid $white;
 }
 
 .overlay-profile {
-    background-color: $darkBlue;
-    opacity: .4;
+    background-color: $blue;
+    opacity: .6;
     position: absolute;
-    top: 170px; 
-    left: 1150px;
-    width: 20%;
-    padding: 50px;
+    top: 165px; 
+    left: 940px;
+    width: 22%;
 }
 
 .decoration-round-profile {
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
     background-color: $blueGreen;
-    border: 8px solid $white;
+    border: 7px solid $white;
     position: absolute;
-    top: 150px;
-    left: 1130px;
+    top: 148px;
+    left: 925px;
     z-index: 1;
     border-radius: 25px;
 }
@@ -187,13 +241,18 @@ body,html{
     -ms-filter: "FlipH";
 }
 
+a{
+    color:$blueGreen;
+}
+
+
 .visit{
     background-color:$white;
     color:$blueGreen;
     position: absolute;
-    left: 1150px;
-    top:470px;
-    width:20%;
+    left:940px;
+    top:445px;
+    width:22%;
     height:80px;
     padding:25px;
     font-size:1.5rem;
@@ -214,16 +273,23 @@ body,html{
 }
 
 .info-card .col-sm-4{
-    display:inline-block
+    display:inline-block;
+    padding-right:0px;
+    width:25%;
 }
 
 .info-card h3{
     padding:20px;
+    padding-left:40px;
 }
 
 .numbers{
     border-left: 1px solid $gray;
     margin-bottom:20px;
+}
+
+.numbers h6{
+    color:$blue;
 }
 
 //---------------------------------------
@@ -241,7 +307,7 @@ body,html{
   
   .gallery-cell {
     width: 28%;
-    height: 200px;
+    height: 269px!important;
     margin-right: 10px;
     background: #8C8;
     counter-increment: gallery-cell;
@@ -264,12 +330,14 @@ body,html{
   .gallery-cell{
       width:24%;
       height:300px;
+      
   }
 
   .gallery-cell img{
       z-index:1;
-      width:100%;
+      width:101%;
       height:100%;
+      
   }
 
   .gallery-cell:before {
@@ -286,20 +354,24 @@ body,html{
   
   .flickity-prev-next-button.previous{
       left:0!important;
-      padding:150px 0;
+      padding:135px 0;   /*!--------------------------*/
       background:black;
       opacity:0.5;
   }
 
   .flickity-prev-next-button.next{
-      right:0!important;
-      padding:150px 0;
+    right: -8!important;
+      padding:135px 0;
       background:black;
       opacity:0.5;
   }
 
   .flickity-prev-next-button{
       border-radius:0!important;
+  }
+
+  .flickity-slider{
+      width:101%!important;
   }
 
   //------------------------------------------//
@@ -337,6 +409,7 @@ body,html{
       margin-left:30px;
       //padding-left:10px;
       padding-right:15px;
+      font-size:13px;
   }
 
   .auction-visit{
@@ -348,15 +421,41 @@ body,html{
       padding-bottom:15px;
       padding-left:10px;
       padding-right:10px;
+      font-size:13px;
   }
 
   .breadcrumbs{
       color:$blueGreen;
-      margin-top:40px;
+      margin:40px 0;
       font-weight: 600;
 
   }
 
+  #watchlist h2{
+      margin: 30px 0;
+  }
+
+
+  .btns-right{
+    border:1px solid $gray;
+    background-color:#f7f7f7;
+    color:$darkBlue;
+    display:inline-block;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:13px;
+    float:right;
+    font-weight:700;
+    margin:5px;
+}
+   
+    #watchlist .col-sm-4, #watchlist .col-sm-8{
+        display:inline-block;
+        margin-bottom:30px;
+
+    }
   //------- FAQ ------//
   .fast-questions{
       border:1px solid $gray;

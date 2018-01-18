@@ -23,13 +23,24 @@ $darkGray: #4e4e4e;
 
 //search form top
 .form-control {
-    padding: 0.2rem 2rem; //.2rem 1.5rem;
+    padding: 2px 12px; //.2rem 1.5rem;
 }
 
-.form-inline {
+.form-inline{
     //margin-right: 290px;
     margin-right: 15%;
 }
+
+.search{
+    padding-left:20px!important;
+    font-style: italic;
+}
+
+.search::-webkit-input-placeholder { color: #000;}
+.search:-moz-placeholder {color: #000;}
+.search::-moz-placeholder {color: #000;}
+.search:-ms-input-placeholder {color: #000;}
+
 
 .lijntje {
     border-top: 4px solid $blueGreen;
@@ -42,8 +53,13 @@ $darkGray: #4e4e4e;
 }
 
 .blue-nav {
-   // border-left: 1px solid $darkBlue;
-   padding-right: 15px;
+    // border-left: 1px solid $darkBlue;
+    padding-right:5px;
+    font-size: 13px;
+}
+
+.nav-link{
+    font-size: 15px;
 }
 
 .fa-user {
@@ -58,6 +74,7 @@ $darkGray: #4e4e4e;
     padding: 0 0px; //0 20px
     margin-left: 10px;
     margin-right: 10px;
+    font-size:13px!important;
 }
 
 //li grijze nav
@@ -65,7 +82,7 @@ $darkGray: #4e4e4e;
     color: $darkGray;
     font-weight: 700;
     margin-left: 0px; //20px
-    padding-right: 40px;
+    padding-right: 25px;
 }
 
 .bg-dark, .navbar-dark {
@@ -73,10 +90,14 @@ $darkGray: #4e4e4e;
 }
 
 .navbar-right {
-    margin-left: 280px;
+    margin-left: 200px;
 }
 
 .taal {
     padding-right: 10px!important;
     color: $darkBlue!important;
+}
+
+.taal .active{
+    
 }
