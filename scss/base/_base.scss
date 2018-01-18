@@ -451,11 +451,43 @@ a{
     margin:5px;
 }
    
-    #watchlist .col-sm-4, #watchlist .col-sm-8{
-        display:inline-block;
-        margin-bottom:30px;
-
+    #watchlist .col-sm-4, #watchlist .col-sm-8 {
+        display: inline-block;
+        margin-bottom: 30px;
     }
+
+
+    #watchlist th:nth-child(1) {
+        visibility: collapse;
+        border-bottom: 1px solid $white;
+    }
+
+    #watchlist td:nth-child(1) {
+        border: 1px solid $white;
+    }
+
+    #checkBox {
+        width: 20px;
+        height: 20px;
+    }
+
+    th {
+        background-color:#f7f7f7!important;
+        border-color: $darkGray;
+        height: 35px!important;
+        color: $darkGray;
+    }
+
+    .watchlist h4{
+        margin-top:40px;
+        margin-bottom:0;
+        margin-left:40px;
+    }
+
+    .watchlist p{
+        margin-bottom:0;
+    }
+    
   //------- FAQ ------//
   .fast-questions{
       border:1px solid $gray;
