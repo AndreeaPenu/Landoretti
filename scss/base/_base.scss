@@ -57,7 +57,7 @@ h1 {
     font-weight:100!important;
 }
 
-.card{
+#home .card{
     margin-left:25px;
     width: 310px;
     height: 165px;
@@ -721,11 +721,15 @@ td {
       padding-left:0;
 
   }
+  .adv{
+      float:right;
+      padding-right:33%;
+  }
 
   .sort-by{
       padding:20px;
       border-bottom:1px solid $gray;
-      padding-left:16%;
+      padding-left:15%;
   }
 
   .extra-info .btn{
@@ -742,11 +746,19 @@ td {
 .auction-1{
       display:inline-block!important;
 }
-.overzicht-art{
-
+.auction-1 img{
+  width:95%;
 }
-.card-lg{
+#overzicht .footer{
+    margin-top:50px;
+}
 
+.top-numb{
+    float:right;
+}
+
+.card-lg{
+    display:block;
 }
 .left{
     float:left;
@@ -760,7 +772,16 @@ td {
     clear:both;
 }
 
-#overzicht .col-sm-5, #overzicht .col-sm-3{
+#overzicht .card{
+        margin-left:0px;
+        width: 524px;
+        height: 821px;
+        margin-bottom:10px;
+    
+}
+
+
+#overzicht .col-sm-6, #overzicht .col-sm-3{
     padding-left:0!important;
 }
 #overzicht .auction-1{
