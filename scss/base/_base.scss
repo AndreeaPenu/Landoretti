@@ -625,7 +625,7 @@ td {
   }
   .small-images img{
     border: 1px solid black;
-    width:240px;
+    width:230px;
     height:120px;
     object-fit: cover;
     margin-top:10px;
@@ -637,8 +637,9 @@ td {
   }
 
   #big-image img{
-      height:460px;
-      width:740px;
+      height:383px;
+      width:722px;
+      object-fit: cover;
   }
 
   #detail .col-sm-3, #detail .col-sm-8{
@@ -660,7 +661,7 @@ td {
   .detail-title{
     line-height: 20%;
   }
-  .detail-title p {
+  .detail-title p, .price p {
       color:$darkBlue;
   }
 
@@ -670,31 +671,55 @@ td {
   .detail-time{
       padding:20px 0;
       line-height: 20%;
+      font-size:12px;
   }
 
   .detail-text{
     padding:20px 0;
+    font-size:12px;
   }
 
   .price{
       border:1px solid $gray;
       text-align:right;
-
   }
 
-  .extra-info .col-sm-8, .extra-info .col-sm-3{
+  .bid-now input{
+    width: 100px;
+    height: 40px;
+    padding:15px;
+  }
+
+  .bid-now{
+      background-color:$blueGreen;
+      padding:10px;
+      color:$white;
+  }
+  .extra-info .col-sm-9, .extra-info .col-sm-3{
       display:inline-block;
+  }
+
+  .detail{
+      margin-left:-26px;
   }
   .extra-info{
       border:1px solid $gray;
       margin-top:40px;
       padding:20px 10px;
+      font-size:14px;
+  }
+
+  .extra-info h6{
+      font-weight:700;
   }
   .extra-right{
       border-left:1px solid $gray;
+      margin-left:-5px;
   }
   .extra-right ul{
       list-style:none;
+      padding-left:0;
+
   }
 
   .sort-by{
@@ -703,6 +728,15 @@ td {
       padding-left:16%;
   }
 
+  .extra-info .btn{
+      white-space:normal;
+      margin:40px 0;
+  }
+
+  .related-items{
+    //  background-color:$gray;
+     
+  }
   // --------------- overzicht ----------------//
 
 .auction-1{
