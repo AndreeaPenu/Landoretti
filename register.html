@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Landoretti</title>
+       <!-- Favicon -->
+       <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +20,7 @@
     <link rel="stylesheet" href="css/flickity.css" media="screen">
 
   </head>
-  <body id="myAuction">
+  <body id="register">
        
     <!-- White navbar --> 
     <a href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>
@@ -30,13 +32,13 @@
         <div class="collapse navbar-collapse" id="nav1">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="watchlist.html">
                     <i class="fa fa-bars" aria-hidden="true"></i><span class="blue-nav1"> WATCHLIST</span>
                     <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="profile.html">
                     <div class="line"><i class="fa fa-user" aria-hidden="true"></i><span class="blue-nav"> PROFILE</span></div> 
                 </a>
               </li>
@@ -53,60 +55,69 @@
       </div>
     </nav>
     
-    <!-- Gray navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2" aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav2">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ART</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ISEARCH</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MYAUCTIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MYBIDS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-        </ul>
-        
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item">
-                <a class="nav-link taal" href="#">NL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link taal" href="#">FR</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link taal" href="#">EN</a>
-            </li>
-        </ul>
-      </div>
-    </nav>
+        <!-- Gray navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2" aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav2">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="overzicht.html">ART</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="search.html">ISEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="myAuctions.html">MYAUCTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">MYBIDS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                  </ul>
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="nav-item">
+                          <a class="nav-link taal" href="#">NL</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link taal" href="#">FR</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link taal active" href="#">EN</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
 
     <!-- Hero -->
 
     <div class="hero-image">
     </div>
-      <div class="decoration-round-profile"></div>
-      <div class="overlay-profile">
-        <p class="overlay-text-profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-          took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text</p>
+    <div class="decoration-round-profile"></div>
+    <div class="overlay-profile">
+        <div class="overlay-h3-profile">
+             <h3>Lorem Ipsum</h3>
         </div>
-        <div class="visit">
-            <p>VISIT AUCTION ></p>
-        </div>
+       
+      <p class="overlay-text-profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+      <p class="overlay-text-profile">
+          Price: € 299,99
+      </p>
+
+      </div>
+
+      <div class="visit">
+          <p>VISIT AUCTION ></p>
+      </div>
 
         <!-- breadcrumbs -->
         <div class="container-fluid">
@@ -120,29 +131,38 @@
         <div class="container-fluid">
             
             <form>
-                <div class="form-group">
+
+                <div class="row">
+
+                    
+                        <div class="form-group col-md-4">
                   <label for="reg-name">Company or name</label>
                   <input type="text" class="form-control" id="reg-name" placeholder="Studio 6">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group col-md-4">
                     <label for="reg-email">Email</label>
                     <input type="email" class="form-control" id="reg-email" placeholder="name@provider.com">
                 </div>
+                </div>
+            
          
-              
-                <div class="form-group">
+              <div class="row">
+
+                <div class="form-group col-md-4">
                     <label for="reg-pass">Password</label>
                     <input type="password" class="form-control" id="reg-pass" placeholder="Password">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group col-md-4">
                     <label for="reg-pass-conf">Password confirmation</label>
                     <input type="password" class="form-control" id="reg-pass-conf" placeholder="Password">
                 </div>
+              </div>
+                
 
-
-                <div class="form-group">
+            <div class="row">
+                         <div class="form-group col-md-4">
                         <label for="reg-country">Country</label>
                         <select class="form-control" id="reg-country">
                           <option>Belgium</option>
@@ -153,48 +173,65 @@
                         </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group col-md-4">
                     <label for="reg-zip">Zip Code</label>
                     <input type="text" class="form-control" id="reg-zip" placeholder="8400">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group col-md-4">
                     <label for="reg-city">City</label>
                     <input type="text" class="form-control" id="reg-city" placeholder="Oostende">
                 </div>
+            </div>
+       
 
-                
-                <div class="form-group">
+
+            <div class="row">
+
+                <div class="form-group col-md-4">
                     <label for="reg-address">Address</label>
                     <input type="text" class="form-control" id="reg-address" placeholder="Zuidstraat 15 C4">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group col-md-4">
                     <label for="reg-phone">Phone Number</label>
                     <input type="text" class="form-control" id="reg-phone" placeholder="+ 32 XX XXX XX XX">
                 </div>
 
-                <div class="form-group">
+            </div>
+                
+            <div class="row">
+                     <div class="form-group col-md-4">
                         <label for="reg-accnumber">Account number</label>
                         <input type="text" class="form-control" id="reg-accnumber" placeholder="XX XXX XX XX">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group col-md-4">
                             <label for="reg-vat">VAT-number</label>
                             <input type="text" class="form-control" id="reg-vat" placeholder="XX XXX XX XX">
                         </div>
+            </div>
 
-                        <div class="form-group">
+           
+            <div class="row">
+                
+                        <div class="form-group col-md-4">
                                 <label for="reg-payment">Alternative payment methods number</label>
                                 <input type="text" class="form-control" id="reg-payment" placeholder="Lorem">
                             </div>
+            </div>
 
 
-                            <div class="form-check">
+
+
+                            <div class="row">
+                                  <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="reg-agree">
                                     <label class="form-check-label" for="reg-agree">I Agree To The Terms & Conditions</label>
                                   </div>
-                                  <button type="submit" class="btn btn-primary">REGISTER</button>
+                                  
+                            </div>
+                          <button type="submit" class="btn btn-primary">REGISTER</button>
 
             </form>
 
@@ -319,7 +356,7 @@
       </div>
         
         <!-- Gray navbar -->
-         <a href="#"><img class="logo2" src="img/logo.png" alt="logo Landoretti"></a>
+         <a href="#"><img class="logo2" src="img/logo2.jpg" alt="logo Landoretti"></a>
         <nav class="navbar footer-nav navbar-expand-lg navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav3" aria-controls="nav3" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

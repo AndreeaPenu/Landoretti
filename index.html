@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <title>Landoretti</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,29 +20,29 @@
   </head>
   <body id="home">
        
-    <!-- White navbar --> 
-    <a href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>
+    <!-- White navbar : LOGGED IN --> 
+  <a href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>
     <nav class="navbar lijntje navbar-expand-md navbar-light bg-light">
-      <!--<a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+     
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-welcome" aria-controls="nav1-welcome" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="nav1">
+        <div class="collapse navbar-collapse" id="nav1-welcome">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="watchlist.html">
                     <i class="fa fa-bars" aria-hidden="true"></i><span class="blue-nav1"> WATCHLIST</span>
                     <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="profile.html">
                     <div class="line"><i class="fa fa-user" aria-hidden="true"></i><span class="blue-nav"> PROFILE</span></div> 
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"> 
-                    <div class="line"><span class="blue-nav">LOGOUT</span></div>
+                    <div class="line"><span class="blue-nav logout-button">LOGOUT</span></div>
                 </a>
               </li>
             </ul>
@@ -49,6 +52,71 @@
         </form>
       </div>
     </nav>
+ 
+
+
+    <!-- White navbar : REGISTER -->
+
+<!--   
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-register" aria-controls="nav1-register" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1-register">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <span class="blue-nav"> REGISTER</span>
+                    <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> 
+                    <div class="line"><span class="blue-nav login-button">LOGIN</span></div>
+                </a>
+              </li>
+            </ul>
+        <form class="form-inline my-2 my-lg-0 search-full">
+          <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <a><i class="fa fa-search  fa-lg" aria-hidden="true"></i></a>
+        </form>
+      </div>
+    </nav> -->
+
+
+ <!-- White navbar : LOGIN FORM -->
+<!-- 
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-login" aria-controls="nav1-login" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="nav1-login">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="#">
+                 <span class="blue-nav"> REGISTER</span>
+                 <span class="sr-only">(current)</span>
+             </a>
+           </li>
+           <form class="form-inline my-2 my-lg-0 login-user">
+            <input class="form-control mr-sm-2 " type="text" placeholder="User" aria-label="User">
+          </form>
+
+          <form class="form-inline my-2 my-lg-0 login-user">
+            <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+          </form>
+
+          <button onclick="goLogin()" class="btn btn-primary go-login-button">></button>
+         </ul>
+     <form class="form-inline my-2 my-lg-0 search-full">
+       <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+       <a><i class="fa fa-search  fa-lg" aria-hidden="true"></i></a>
+     </form>
+   </div>
+ </nav> 
+ -->
+
+
+
+
     
     <!-- Gray navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -58,16 +126,16 @@
       <div class="collapse navbar-collapse" id="nav2">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ART</a>
+            <a class="nav-link" href="overzicht.html">ART</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ISEARCH</a>
+            <a class="nav-link" href="search.html">ISEARCH</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MYAUCTIONS</a>
+            <a class="nav-link" href="myAuctions.html">MYAUCTIONS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">MYBIDS</a>
@@ -92,12 +160,12 @@
     </nav>
     
     <!-- Carousel -->
-    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-home" data-slide-to="1"></li>
-        <li data-target="#carousel-home" data-slide-to="2"></li>
-        <li data-target="#carousel-home" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -113,13 +181,13 @@
             <img class="d-block w-100 car-photo" src="img/foto3.png" alt="Third slide">
           </div>
       </div>
-      <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <div class="padd">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </div>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <div class="padd">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </div>
@@ -131,7 +199,7 @@
         <p class="overlay-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
         </div>
     </div>
-    
+
     <!-- How does it work? -->
     <div class="container-fluid marketing">
         
@@ -169,12 +237,14 @@
                          <img class="card-img-top card-sm" src="img/vrouw.png" alt="Card image cap">
                     </div>
                 </div>
-                <div class="col-sm-8">
-                    <img class="card-img-top card-bg" src="img/time.png" alt="Card image cap">
+                <div class="col-sm-8 container-hover">
+                  <a class="big-hover" href="#">  <img class="card-img-top card-bg" src="img/time.png" alt="Card image cap"></a>
                 </div>
             </div>
         </div>        
     </div>
+           
+  
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-wrapper">
@@ -293,7 +363,7 @@
       </div>
         
         <!-- Gray navbar -->
-         <a href="#"><img class="logo2" src="img/logo.png" alt="logo Landoretti"></a>
+         <a href="#"><img class="logo2" src="img/logo2.jpg" alt="logo Landoretti"></a>
         <nav class="navbar footer-nav navbar-expand-lg navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav3" aria-controls="nav3" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -337,8 +407,12 @@
     </footer>    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="node_modules/jquery/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>

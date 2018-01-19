@@ -6,6 +6,9 @@ $betweenGray: #7e7e7e;
 .footer-nav {
     border-bottom: 4px solid $blueGreen;
 }
+.footer-rechts a{
+    text-decoration: underline;
+}
 
 .logo2 {
     width: 1.431in;
@@ -59,6 +62,7 @@ $betweenGray: #7e7e7e;
 .footer-search {
     margin-bottom: 20px!important;
     margin-top: 10px!important;
+    margin-right:0px!important;
 }
 
 /* .form-inline .footer-search{
