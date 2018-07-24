@@ -225,7 +225,7 @@ body, html {
 
 .hero-image {
   background-image: url("../img/plaat.jpg");
-  height: 60%;
+  height: 78%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,7 +245,7 @@ a {
   color: #01a6a0;
   position: absolute;
   left: 940px;
-  top: 445px;
+  top: 409px;
   width: 22%;
   height: 80px;
   padding: 25px;
@@ -387,7 +387,7 @@ body {
 .breadcrumbs {
   color: #01a6a0;
   margin: 40px 0;
-  font-weight: 600; }
+  font-weight: 400; }
 
 #watchlist h2, #auctions h2 {
   margin: 30px 0; }
@@ -478,12 +478,10 @@ th {
   font-size: 1.5em; }
 
 #search #name, #search #artist {
-  width: 40%;
   background-color: #eaeaea;
   padding: 10px; }
 
 #search #info {
-  width: 60%;
   background-color: #eaeaea;
   padding: 10px; }
 
@@ -507,12 +505,23 @@ label {
 
 .overview {
   border: 1px solid #eaeaea;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  flex-direction: row; }
 
 .overview p {
   line-height: 50%; }
 
+.flex-4 {
+  flex: 4; }
+
+.flex-1 {
+  flex: 1; }
+
 .own {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
   border: 1px solid #eaeaea;
   background-color: #eaeaea;
   color: #0a1e75;
@@ -756,6 +765,10 @@ td {
   background-color: #01a6a0; }
   #pop2 h1, #pop2 p {
     color: #ffffff; }
+
+.admin-request {
+  float: right;
+  margin-top: 37px; }
 
 .footer-nav {
   border-bottom: 4px solid #01a6a0; }
