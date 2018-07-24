@@ -942,3 +942,10 @@ td {
 .inactive {
     display: none;
 }
+
+#pop2 {
+    background-color: $blueGreen;
+    h1, p {
+        color: $white;
+    }
+}

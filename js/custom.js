@@ -71,3 +71,18 @@ frBtn.addEventListener('click', function(){
     nlBtn.classList.remove('active');
     enBtn.classList.remove('active');
 });
+
+var closeBtn = document.querySelector('#close-pop');
+var openBtn = document.querySelector('#open-pop');
+var pop2 = document.querySelector('#pop2');
+var pop1 = document.querySelector('#pop1');
+
+closeBtn.addEventListener('click', function(){
+    pop2.classList.remove('inactive');
+    pop1.classList.add('inactive');
+});
+
+openBtn.addEventListener('click', function(){
+    pop1.classList.remove('inactive');
+    pop2.classList.add('inactive');
+});

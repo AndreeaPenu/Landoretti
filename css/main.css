@@ -752,6 +752,11 @@ td {
 .inactive {
   display: none; }
 
+#pop2 {
+  background-color: #01a6a0; }
+  #pop2 h1, #pop2 p {
+    color: #ffffff; }
+
 .footer-nav {
   border-bottom: 4px solid #01a6a0; }
 
