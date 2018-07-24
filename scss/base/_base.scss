@@ -438,7 +438,43 @@ a{
   .auction{
       padding-bottom:150px;
       padding-top:40px;
+      .gallery-cell {
+          display: inline-block;
+          margin-right: 0;
+       
+          //overflow: hidden;
+         // position: absolute;
+   
+          img {
+            height: 269px;
+            width: 250px;
+           
+          // -webkit-transition: all 1s ease;
+          //     -moz-transition: all 1s ease;
+            //     -o-transition: all 1s ease;
+           //   -ms-transition: all 1s ease;
+           //         transition: all 1s ease;
+
+                    
+          }
+          &:hover img{
+         //   width: 400px;
+          //  height: 400px;
+          }
+      }
+      .gallery {
+          background-color: $gray;
+      }
+
+      .gallery-full {
+          display: inline-block;
+      }
   }
+
+  .related-items {
+      background-color: $gray;
+  }
+
 
   .auction h3{
       padding:20px 0;
@@ -548,7 +584,7 @@ a{
   //------- FAQ ------//
   .fast-questions{
       border:1px solid $gray;
-      padding:50px;
+      padding:20px;
       margin: 0 auto;
     }
 
@@ -966,4 +1002,15 @@ td {
 .admin-request {
     float: right;
     margin-top: 37px;
+}
+
+.q-row {
+    display: flex;
+}
+
+.question {
+    flex: 1;
+    color: $blueGreen;
+    font-weight: 700;
+    text-decoration: underline;
 }
