@@ -899,7 +899,11 @@ footer .col-sm-3 {
 
 .taal {
   padding-right: 10px !important;
-  color: #0a1e75 !important; }
+  color: #0a1e75 !important;
+  font-weight: 400 !important; }
+
+.active {
+  font-weight: 700 !important; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

@@ -49,3 +49,25 @@ logoutBtn.addEventListener('click', function(){
     nav1.classList.remove('inactive');
     nav3.classList.add('inactive');
 });
+
+var nlBtn = document.querySelector('#nl');
+var enBtn = document.querySelector('#en');
+var frBtn = document.querySelector('#fr');
+
+nlBtn.addEventListener('click', function(){
+    nlBtn.classList.add('active');
+    frBtn.classList.remove('active');
+    enBtn.classList.remove('active');
+});
+
+enBtn.addEventListener('click', function(){
+    enBtn.classList.add('active');
+    frBtn.classList.remove('active');
+    nlBtn.classList.remove('active');
+});
+
+frBtn.addEventListener('click', function(){
+    frBtn.classList.add('active');
+    nlBtn.classList.remove('active');
+    enBtn.classList.remove('active');
+});
