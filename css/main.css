@@ -749,6 +749,9 @@ td {
   padding: .375rem .75rem;
   border-radius: 1px; }
 
+.inactive {
+  display: none; }
+
 .footer-nav {
   border-bottom: 4px solid #01a6a0; }
 

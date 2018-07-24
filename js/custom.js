@@ -6,17 +6,6 @@ $(function(){
     });
 });
 
-
-function goLogin() {
-    var x = document.getElementById("nav1-welcome");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-
 $(document).ready(function() {
     $('#user-form').validate({
    rules: {
@@ -37,4 +26,26 @@ $(document).ready(function() {
      $(element).remove();
    }
  });
+});
+
+var loginBtn = document.querySelector('#login-button');
+var goBtn = document.querySelector('#go-button');
+var logoutBtn = document.querySelector('#logout-button');
+var nav1 = document.querySelector('#nav1');
+var nav2 = document.querySelector('#nav2');
+var nav3 = document.querySelector('#nav3');
+
+loginBtn.addEventListener('click', function(){
+    nav2.classList.remove('inactive');
+    nav1.classList.add('inactive');
+});
+
+goBtn.addEventListener('click', function(){
+    nav3.classList.remove('inactive');
+    nav2.classList.add('inactive');
+});
+
+logoutBtn.addEventListener('click', function(){
+    nav1.classList.remove('inactive');
+    nav3.classList.add('inactive');
 });
