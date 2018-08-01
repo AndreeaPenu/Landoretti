@@ -993,9 +993,13 @@ td {
 }
 
 #pop2 {
+    height: 600px;
     background-color: $blueGreen;
     h1, p {
         color: $white;
+    }
+    p {
+        margin-top: 350px;
     }
 }
 
@@ -1013,4 +1017,34 @@ td {
     color: $blueGreen;
     font-weight: 700;
     text-decoration: underline;
+}
+
+#pop2 .container img{
+    &:nth-child(1), &:nth-child(3){
+        width: 400px;
+        height: 250px;
+    }
+    &:nth-child(1){
+        position: absolute;
+        top: 1532px;
+        left: 284px;
+        border: 10px solid white;
+    }
+    &:nth-child(2){
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 1507px;
+        left: 538px;
+        border: 10px solid white;
+        z-index: 3;
+    }
+
+    &:nth-child(3){
+        top: 1532px;
+        position: absolute;
+        right: 298px;
+        border: 10px solid white;
+    }
+
 }

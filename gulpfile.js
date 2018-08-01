@@ -3,6 +3,12 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 
+var elixir = require('laravel-elixir');
+
+elixir(function(mix) {
+    mix.sass('main.scss');
+});
+
 // optimize images
 gulp.task('imageMin', () =>
     gulp.src('img/*')

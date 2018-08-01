@@ -775,9 +775,12 @@ td {
   display: none; }
 
 #pop2 {
+  height: 600px;
   background-color: #01a6a0; }
   #pop2 h1, #pop2 p {
     color: #ffffff; }
+  #pop2 p {
+    margin-top: 350px; }
 
 .admin-request {
   float: right;
@@ -788,9 +791,34 @@ td {
 
 .question {
   flex: 1;
-  color: #01a6a0;
+  color: #319eb1;
   font-weight: 700;
   text-decoration: underline; }
+
+#pop2 .container img:nth-child(1), #pop2 .container img:nth-child(3) {
+  width: 400px;
+  height: 250px; }
+
+#pop2 .container img:nth-child(1) {
+  position: absolute;
+  top: 1532px;
+  left: 284px;
+  border: 10px solid white; }
+
+#pop2 .container img:nth-child(2) {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 1507px;
+  left: 538px;
+  border: 10px solid white;
+  z-index: 3; }
+
+#pop2 .container img:nth-child(3) {
+  top: 1532px;
+  position: absolute;
+  right: 298px;
+  border: 10px solid white; }
 
 .footer-nav {
   border-bottom: 4px solid #01a6a0; }
