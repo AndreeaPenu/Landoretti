@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     
     <!-- FontAwesome CSS --> 
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
     
      <!-- Custom CSS --> 
     <link rel="stylesheet" href="css/main.css">
@@ -136,23 +139,25 @@
 
               <div class="row">
                 <div class="form-group col-md-6">
-                        <label for="select-style"></label>
-                        <select class="form-control select" id="select-style" name="select-style">
-                          <option>Style</option>
-                          <option>Abstract</option>
-                          <option>African American</option>
-                          <option>Asian Contemporary</option>
-                          <option>Conceptual</option>
-                          <option>Contemporary</option>
-                          <option>Emerging Artists</option>
-                          <option>Figurative</option>
-                          <option>Middle Eastern Contemporary</option>
-                          <option>Minimalism</option>
-                          <option>Modern</option>
-                          <option>Pop</option>
-                          <option>Urban</option>
-                          <option>Vintage Photographs</option>
-                        </select>
+                       
+                          <select class="wide" name="select-style">
+                            <option>Style</option>
+                            <option>Abstract</option>
+                            <option>African American</option>
+                            <option>Asian Contemporary</option>
+                            <option>Conceptual</option>
+                            <option>Contemporary</option>
+                            <option>Emerging Artists</option>
+                            <option>Figurative</option>
+                            <option>Middle Eastern Contemporary</option>
+                            <option>Minimalism</option>
+                            <option>Modern</option>
+                            <option>Pop</option>
+                            <option>Urban</option>
+                            <option>Vintage Photographs</option>
+                          </select>
+                    
+                       
                       </div>
 
 
@@ -466,7 +471,6 @@
 
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-    <script src="trunk/dev/validation.js"></script>
 
     <script src="node_modules/jquery/jquery.min.js"></script>
     <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
@@ -474,6 +478,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 
 

@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $('select').niceSelect();
+});
+
 $(function(){
     $("#big-image img:eq(0)").nextAll().hide();
     $(".small-images img").click(function(e){

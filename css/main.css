@@ -763,8 +763,30 @@ td {
 #select-style {
   background-color: #eaeaea; }
 
-.select > option {
-  background-color: #f7f7f7; }
+select > option {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid red; }
+
+.nice-select {
+  border-radius: 0;
+  background-color: #e5e5e5;
+  color: #4f4f4f;
+  font-weight: bold; }
+  .nice-select .list {
+    border-radius: 0;
+    background-color: #fafafa;
+    color: #4f4f4f;
+    border-bottom: 1px solid #e4e4e4; }
+    .nice-select .list li.option {
+      border-bottom: 1px solid #e4e4e4; }
+
+.nice-select:after {
+  border-bottom: 1.5px solid #999;
+  border-right: 1.5px solid #999;
+  right: 20px;
+  top: 44%;
+  width: 10px;
+  height: 10px; }
 
 #register .form-control {
   background-color: #eaeaea;
@@ -791,7 +813,7 @@ td {
 
 .question {
   flex: 1;
-  color: #319eb1;
+  color: #01a6a0;
   font-weight: 700;
   text-decoration: underline; }
 
