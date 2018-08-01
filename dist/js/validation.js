@@ -1,0 +1,1 @@
+$(function(){$("#auction-form").validate({rules:{title:{required:!0},description:{required:!0}},errorPlacement:function(e,r){var a=$(r).attr("name");$(".error-message").show(),$(".error-message").append(" <li> Please enter a "+a+" for your auction </li>")}})});

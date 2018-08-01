@@ -135,6 +135,8 @@
         </div>
         <div class="container-fluid auction">
 
+          <div class="error-message"></div>
+
             <form id="auction-form" class="example" method="post">
 
               <div class="row">
@@ -290,9 +292,9 @@
              
 
               <div class="form-group">
-                  <button class="btn btn-success" type="submit">
-                  ADD AUCTION
-              </button>
+                  <input class="btn btn-success" id="submit-button" type="submit" value="ADD AUCTION">
+                  
+                  
               </div>
             
               <p><a href="faq.html">ASK A QUESTION ></a> </p>
@@ -474,11 +476,13 @@
 
     <script src="node_modules/jquery/jquery.min.js"></script>
     <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="js/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 
 

@@ -1004,6 +1004,21 @@ select > option {
 }
 
 
+.error {
+    color: red !important;
+    border: 1px solid red;
+    background: pink!important;
+}
+
+.error-message {
+    background-color: pink;
+    color: red;
+    border: 1px solid red;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: none;
+}
+
 // --------- Register -------- //
 #register .form-control{
     background-color:$gray;
