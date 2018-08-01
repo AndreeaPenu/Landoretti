@@ -801,6 +801,16 @@ select > option {
   margin-bottom: 30px;
   display: none; }
 
+i.fa {
+  font-size: 25px;
+  position: absolute;
+  left: 498px;
+  top: 37px; }
+
+#success {
+  color: #01a6a0;
+  display: none; }
+
 #register .form-control {
   background-color: #eaeaea;
   padding: .375rem .75rem;

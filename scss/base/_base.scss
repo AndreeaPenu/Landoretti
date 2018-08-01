@@ -1019,6 +1019,18 @@ select > option {
     display: none;
 }
 
+i.fa {
+    font-size: 25px;
+    position: absolute;
+    left: 498px;
+    top: 37px;
+}
+
+#success {
+    color: $blueGreen;
+    display: none;
+}
+
 // --------- Register -------- //
 #register .form-control{
     background-color:$gray;
