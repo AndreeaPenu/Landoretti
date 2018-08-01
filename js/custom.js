@@ -2,6 +2,14 @@ $(document).ready(function() {
     $('select').niceSelect();
 });
 
+var newAuction = document.querySelector('#new-auctions');
+var filter = document.querySelector('#filter');
+
+
+newAuction.addEventListener('click', function(){
+    filter.classList.remove('inactive');
+})
+
 $(function(){
     $("#big-image img:eq(0)").nextAll().hide();
     $(".small-images img").click(function(e){

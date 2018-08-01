@@ -123,13 +123,21 @@
         <div class="sort-by">
             <div class="row">
                     <div class="col-sm-6">
-                <p><strong>SORT BY:</strong> ending soonest | ending latest | new auctions | popular auctions</p>
+                <p><strong>SORT BY:</strong> ending soonest | ending latest | <a href="#" id="new-auctions" onclick="event.preventDefault();"> new auctions</a> | popular auctions</p>
                         </div>
                         <div class="col-sm-6">
                             <h4 class="adv">Advanced Options ><h4>
                             </div>
             </div>
             
+        </div>
+
+        <div id="filter" class="inactive">
+            <h4>Price</h4>
+            <h4>Era</h4>
+            <h4>Style</h4>
+            <h4>Ending</h4>
+            <h4>Media</h4>
         </div>
         <!-- breadcrumbs -->
         <div class="container-fluid">
@@ -174,7 +182,7 @@
                 
                   <div class="auction-footer">
                         <div class="auction-time">
-                                25d 14u 44m
+                                <p id="time"></p>
                         </div>
                         <div class="auction-visit">
                                 VISIT AUCTION >
@@ -498,5 +506,7 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>

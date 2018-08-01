@@ -801,15 +801,13 @@ select > option {
   margin-bottom: 30px;
   display: none; }
 
-i.fa {
+#success {
+  color: #01a6a0;
+  display: none;
   font-size: 25px;
   position: absolute;
   left: 498px;
   top: 37px; }
-
-#success {
-  color: #01a6a0;
-  display: none; }
 
 #register .form-control {
   background-color: #eaeaea;
