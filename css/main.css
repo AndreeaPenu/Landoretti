@@ -1132,6 +1132,26 @@ footer .col-sm-3 {
 #carousel-home {
   position: relative; }
 
+@media screen and (min-width: 1171px) {
+  #pop2 .container img:nth-child(1) {
+    position: absolute;
+    top: 1532px;
+    left: 389px;
+    border: 10px solid white; }
+  #pop2 .container img:nth-child(2) {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 1507px;
+    left: 730px;
+    border: 10px solid white;
+    z-index: 3; }
+  #pop2 .container img:nth-child(3) {
+    top: 1532px;
+    position: absolute;
+    right: 409px;
+    border: 10px solid white; } }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #pop2 .container img:nth-child(1) {
     position: absolute;
@@ -1166,19 +1186,19 @@ footer .col-sm-3 {
 @media screen and (max-width: 768px) {
   #pop2 .container img:nth-child(1) {
     position: absolute;
-    top: 1671px;
+    top: 1715px;
     left: 54px;
     border: 10px solid white; }
   #pop2 .container img:nth-child(2) {
     width: 400px;
     height: 300px;
     position: absolute;
-    top: 1645px;
+    top: 1688px;
     left: 184px;
     border: 10px solid white;
     z-index: 3; }
   #pop2 .container img:nth-child(3) {
-    top: 1663px;
+    top: 1715px;
     position: absolute;
     right: 45px;
     border: 10px solid white; }
@@ -1190,10 +1210,10 @@ footer .col-sm-3 {
   .card-bg {
     width: 368px; }
   .overlay {
-    top: 121px;
+    top: 69px;
     left: 123px; }
   .decoration-round {
-    top: 107px;
+    top: 56px;
     left: 109px; }
   .navbar-nav {
     margin-left: 0; }
@@ -1234,21 +1254,28 @@ footer .col-sm-3 {
   .icon {
     width: auto;
     height: 20%; }
+  .how-icon {
+    padding: 0; }
+  .col-sm-3 {
+    width: auto;
+    padding-right: 0px; }
+  .marketing .col-lg-4 {
+    margin-bottom: 0; }
   #pop2 .container img:nth-child(1) {
     position: absolute;
-    top: 1371px;
+    top: 1256px;
     left: 8px;
     border: 10px solid white; }
   #pop2 .container img:nth-child(2) {
     width: 51%;
     height: 22%;
     position: absolute;
-    top: 1365px;
+    top: 1250px;
     left: 86px;
     border: 10px solid white;
     z-index: 3; }
   #pop2 .container img:nth-child(3) {
-    top: 1371px;
+    top: 1256px;
     position: absolute;
     right: 7px;
     border: 10px solid white; }
@@ -1276,7 +1303,7 @@ footer .col-sm-3 {
   .logo2 {
     width: 65px;
     height: 100px;
-    margin-top: -57px;
+    margin-top: -39px;
     right: 36px; }
   footer .col-sm-3 {
     padding-bottom: 0; } }
