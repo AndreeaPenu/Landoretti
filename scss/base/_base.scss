@@ -183,14 +183,14 @@ h1 {
 }
 
 // -------------profile------------ //
-.overlay-text-profile {
+.overlay-text-cta {
     opacity: 1!important;
     line-height: 150%;
     color: $white;
 }
 
-.overlay-profile h3,
-.overlay-profile p {
+.overlay-cta h3,
+.overlay-cta p {
     color: $white;
     padding-top: 20px;
     padding-bottom: 0px;
@@ -198,11 +198,11 @@ h1 {
     padding-right: 40px;
 }
 
-.overlay-h3-profile {
+.overlay-h3-cta {
     border-bottom: 1px solid $white;
 }
 
-.overlay-profile {
+.overlay-cta {
     background-color: $blue;
     opacity: .6;
     position: absolute;
@@ -211,7 +211,7 @@ h1 {
     width: 22%;
 }
 
-.decoration-round-profile {
+.decoration-round-cta {
     width: 33px;
     height: 33px;
     background-color: $blueGreen;

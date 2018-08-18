@@ -151,23 +151,23 @@ h1 {
   background-color: #eaeaea;
   border-radius: 0.1; }
 
-.overlay-text-profile {
+.overlay-text-cta {
   opacity: 1 !important;
   line-height: 150%;
   color: #ffffff; }
 
-.overlay-profile h3,
-.overlay-profile p {
+.overlay-cta h3,
+.overlay-cta p {
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 0px;
   padding-left: 40px;
   padding-right: 40px; }
 
-.overlay-h3-profile {
+.overlay-h3-cta {
   border-bottom: 1px solid #ffffff; }
 
-.overlay-profile {
+.overlay-cta {
   background-color: #0120a6;
   opacity: .6;
   position: absolute;
@@ -175,7 +175,7 @@ h1 {
   left: 940px;
   width: 22%; }
 
-.decoration-round-profile {
+.decoration-round-cta {
   width: 33px;
   height: 33px;
   background-color: #01a6a0;
