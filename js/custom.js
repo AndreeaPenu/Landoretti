@@ -2,12 +2,19 @@ $(document).ready(function() {
     $('select').niceSelect();
 });
 
-var newAuction = document.querySelector('#new-auctions');
+var newAuction = document.querySelector('#adv-options');
 var filter = document.querySelector('#filter');
 
 if (newAuction) {
     newAuction.addEventListener('click', function() {
-        filter.classList.remove('inactive');
+        if (filter.classList.contains('inactive')) {
+            filter.classList.remove('inactive');
+            newAuction.innerHTML = 'Advanced Options <img src="dist/images/down-arrow-white.png" alt="Down arrow">';
+        } else {
+            filter.classList.add('inactive');
+            newAuction.innerHTML = 'Advanced Options <img src="dist/images/right-arrow.png" alt="Right arrow">';
+        }
+
     })
 }
 
@@ -122,3 +129,11 @@ if (openBtn) {
         pop2.classList.add('inactive');
     });
 }
+
+$(".filter-li").click(function() {
+    if ($(this).hasClass('selected')) {
+        $(this).removeClass('selected');
+    } else {
+        $(this).addClass('selected');
+    }
+});

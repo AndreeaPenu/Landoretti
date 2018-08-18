@@ -171,7 +171,9 @@
     </div>
 
     <div class="visit">
-        <p>VISIT AUCTION ></p>
+        <a href="#">
+            <p>VISIT AUCTION <i class="fas fa-angle-right"></i></p>
+        </a>
     </div>
 
     <!-- sort by -->
@@ -181,7 +183,7 @@
                 <p><strong>SORT BY:</strong> ending soonest | ending latest | <a href="#" id="new-auctions" onclick="event.preventDefault();"> new auctions</a> | popular auctions</p>
             </div>
             <div class="col-sm-6">
-                <h4 class="adv">Advanced Options >
+                <h4 class="adv" id="adv-options">Advanced Options <img src="dist/images/right-arrow.png" alt="Right arrow">
                     <h4>
             </div>
         </div>
@@ -189,21 +191,76 @@
     </div>
 
     <div id="filter" class="inactive">
-        <h4>Price</h4>
-        <h4>Era</h4>
-        <h4>Style</h4>
-        <h4>Ending</h4>
-        <h4>Media</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Price</h4>
+                    <ul>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Up to 5,000</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">5,000-10,000</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">10,000-25,000</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">25,000-50,000</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">50,000-100,000</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Above</a></li>
+                    </ul>
+
+                    <h4>Ending</h4>
+                    <ul>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Ending this week</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Newly Listed</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Purchase Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Era</h4>
+                    <ul>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Pre-War</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">1940s-1950s</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">1960s-1980s</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">1990s-Present</a></li>
+                    </ul>
+                    <h4>Media</h4>
+                    <ul>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Design</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Paintings and Work on Paper</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Photographs</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Prints and Multiples</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Sculpture</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Style</h4>
+                    <ul>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Abstract</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">African American</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Asian Contemporary</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Conceptual</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Contemporary</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Emerging Artists</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Figurative</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Middle Eastern Contemporary</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Minimalism</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Modern</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Pop</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Urban</a></li>
+                        <li><a class="filter-li" href="#" onclick="event.preventDefault();">Vintage Photographs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <!-- breadcrumbs -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                <p class="breadcrumbs">Home > Auctions</p>
+                <p class="breadcrumbs"><a href="index.html">Home</a> > Auctions</p>
             </div>
             <div class="col-sm-6">
                 <p class="top-numb">
-                    < 1 2 3 4>
+                    <a href="#" onclick="event.preventDefault();">
+                        < 1 2 <strong>3</strong> 4 ></a>
                 </p>
             </div>
         </div>
@@ -432,7 +489,8 @@
         </div>
 
         <p class="top-numb">
-            < 1 2 3 4>
+            <a href="#" onclick="event.preventDefault();">
+                < 1 2 <strong>3</strong> 4 ></a>
         </p>
     </div>
 

@@ -419,6 +419,11 @@ body {
   padding-right: 10px;
   font-size: 13px; }
 
+#new-auctions {
+  color: black;
+  text-decoration: underline;
+  font-weight: 600; }
+
 .breadcrumbs {
   color: #01a6a0;
   margin: 40px 0;
@@ -667,11 +672,24 @@ td {
 
 .adv {
   float: right;
-  padding-right: 33%; }
+  padding-right: 33%;
+  color: #0a1e75; }
+  .adv img {
+    vertical-align: middle;
+    border-style: none;
+    border: 1px solid lightgray;
+    background: lightgray;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer; }
+
+.selected {
+  text-decoration: underline; }
+  .selected:after {
+    content: "\f057"; }
 
 .sort-by {
   padding: 20px;
-  border-bottom: 1px solid #eaeaea;
   padding-left: 15%; }
 
 .auction-1 {
@@ -684,7 +702,27 @@ td {
   margin-top: 50px; }
 
 .top-numb {
-  float: right; }
+  float: right;
+  letter-spacing: 5px;
+  margin: 40px 0; }
+  .top-numb a {
+    color: black; }
+    .top-numb a:hover {
+      text-decoration: none; }
+
+#filter h4 {
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+#filter ul {
+  list-style: none;
+  padding-left: 10px; }
+  #filter ul a {
+    color: black;
+    line-height: 1.5; }
+    #filter ul a:hover {
+      text-decoration: none;
+      color: #0a1e75; }
 
 .card-lg {
   display: block; }
