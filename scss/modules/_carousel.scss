@@ -1,0 +1,42 @@
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 45px;
+    background-color: black;
+    margin: 0;
+    background-image: url(../img/left-chevron.png);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 40px;
+    opacity: 0.3;
+}
+
+.carousel-control-next-icon {
+    width: 40px;
+    height: 45px;
+    background-color: black;
+    margin: 0;
+    background-image: url(../img/right-chevron.png);
+}
+
+.carousel-inner {
+    max-height: 850px;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $white;
+    opacity: 0.7;
+    margin: 1px 9px;
+}
+
+.carousel-indicators .active {
+    opacity: .8;
+}
+
+#carousel-home {
+    position: relative;
+}

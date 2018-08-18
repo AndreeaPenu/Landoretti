@@ -1,11 +1,5 @@
-/* VARIABLES */
-$darkBlue: #0a1e75;
-$blueGreen: #01a6a0;
-$gray: #eaeaea;
-$darkGray: #4e4e4e;
-
-.fa, 
-.navbar-light .navbar-nav .active>.nav-link, 
+.fa,
+.navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link {
     color: $darkBlue;
 }
@@ -16,77 +10,84 @@ $darkGray: #4e4e4e;
     position: absolute;
     z-index: 2345;
     margin-top: -20px;
-    //margin-left: 310px;
     margin-left: 15.5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 //search form top
 .form-control {
-    padding: 2px 12px; //.2rem 1.5rem;
+    padding: 2px 12px;
 }
 
-.form-inline{
-    //margin-right: 290px;
+.form-inline {
     margin-right: 15%;
 }
 
-.search{
-    padding-left:20px!important;
+.search {
+    padding-left: 20px!important;
     font-style: italic;
 }
 
-.search::-webkit-input-placeholder { color: #000;}
-.search:-moz-placeholder {color: #000;}
-.search::-moz-placeholder {color: #000;}
-.search:-ms-input-placeholder {color: #000;}
+.search::-webkit-input-placeholder {
+    color: #000;
+}
 
+.search:-moz-placeholder {
+    color: #000;
+}
+
+.search::-moz-placeholder {
+    color: #000;
+}
+
+.search:-ms-input-placeholder {
+    color: #000;
+}
 
 .lijntje {
     border-top: 4px solid $blueGreen;
-    //padding:0px;
 }
 
-//grijze nav
+//gray nav
 .navbar-nav {
-    //margin-left: 480px;
-    margin-left: 26.5%; //25.5%
+    margin-left: 26.5%;
 }
 
 .blue-nav {
-    // border-left: 1px solid $darkBlue;
-    padding-right:5px;
+    padding-right: 5px;
     font-size: 13px;
 }
 
-.nav-link{
+.nav-link {
     font-size: 15px;
 }
 
 .fa-user {
     padding-right: 8px;
 }
+
 .line {
     border-left: 1px solid $darkBlue;
     padding-left: 25px;
 }
 
 .blue-nav1 {
-    padding: 0 0px; //0 20px
+    padding: 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    font-size:13px!important;
+    font-size: 13px!important;
 }
 
-//li grijze nav
+//li gray nav
 .navbar-dark .navbar-nav .nav-link {
     color: $darkGray;
     font-weight: 700;
-    margin-left: 0px; //20px
+    margin-left: 0px;
     padding-right: 25px;
 }
 
-.bg-dark, .navbar-dark {
+.bg-dark,
+.navbar-dark {
     background-color: $gray!important;
 }
 
@@ -100,6 +101,6 @@ $darkGray: #4e4e4e;
     font-weight: 400!important;
 }
 
-.active{
+.active {
     font-weight: 700!important;
 }

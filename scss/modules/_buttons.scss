@@ -1,0 +1,42 @@
+.btns-right {
+    border: 1px solid $gray;
+    background-color: #f7f7f7;
+    color: $darkBlue;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    float: right;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.btn-primary {
+    border-radius: 0;
+    background-color: rgba(54, 59, 54, 0.467);
+    border-color: rgba(54, 59, 54, 0.467);
+}
+
+.extra-info .btn {
+    white-space: normal;
+    margin: 40px 0;
+}
+
+#newAuction .btn-primary {
+    white-space: normal;
+    margin-right: 60px;
+}
+
+.btn-success {
+    padding: 15px 60px;
+    background-color: $blueGreen;
+    border-radius: 1px;
+    margin-bottom: 20px;
+}
+
+#newAuction .btn-primary {
+    background-color: $darkGray;
+    padding: 10px 20px;
+}
