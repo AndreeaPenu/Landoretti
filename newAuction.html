@@ -1,105 +1,157 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Landoretti</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS --> 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    
-    <!-- FontAwesome CSS --> 
+    <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Nice Select -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
-    
-     <!-- Custom CSS --> 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
-
     <link rel="stylesheet" href="css/flickity.css" media="screen">
+</head>
 
+<body id="newAuction">
 
-  </head>
-  
-  <body id="newAuction">
-       
-    <!-- White navbar --> 
     <a href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>
-    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light">
-      <!--<a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- White navbar : REGISTER -->
+    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light" id="nav1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-register" aria-controls="nav1-register" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="nav1-register">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span class="blue-nav"> REGISTER</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="line"><span class="blue-nav" id="login-button">LOGIN</span></div>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 search-full">
+                <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <a><i class="fas fa-search"></i></a>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- White navbar : LOGIN FORM -->
+
+    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light inactive" id="nav2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-login" aria-controls="nav1-login" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="nav1">
+        <div class="collapse navbar-collapse" id="nav1-login">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="watchlist.html">
-                    <i class="fa fa-bars" aria-hidden="true"></i><span class="blue-nav1"> WATCHLIST</span>
-                    <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="profile.html">
-                    <div class="line"><i class="fa fa-user" aria-hidden="true"></i><span class="blue-nav"> PROFILE</span></div> 
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> 
-                    <div class="line"><span class="blue-nav">LOGOUT</span></div>
-                </a>
-              </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span class="blue-nav"> REGISTER</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <form class="form-inline my-2 my-lg-0 login-user">
+                    <input class="form-control mr-sm-2 " type="text" placeholder="User" aria-label="User">
+                </form>
+
+                <form class="form-inline my-2 my-lg-0 login-user">
+                    <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+                </form>
+
+                <button class="btn btn-primary go-login-button" id="go-button"><i class="fas fa-angle-right"></i></button>
             </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <a><i class="fa fa-search  fa-lg" aria-hidden="true"></i></a>
-        </form>
-      </div>
+            <form class="form-inline my-2 my-lg-0 search-full">
+                <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <a><i class="fas fa-search"></i></a>
+            </form>
+        </div>
     </nav>
-    
-        <!-- Gray navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2" aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav2">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME</a>
+
+    <!-- White navbar : LOGGED IN -->
+    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light inactive" id="nav3">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-welcome" aria-controls="nav1-welcome" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1-welcome">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="watchlist.html">
+                        <i class="fas fa-bars"></i><span class="blue-nav1"> WATCHLIST</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="overzicht.html">ART</a>
+                    <a class="nav-link" href="profile.html">
+                        <div class="line"><i class="fas fa-user"></i><span class="blue-nav"> PROFILE</span></div>
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="search.html">ISEARCH</a>
+                    <a class="nav-link" href="#">
+                        <div class="line"><span class="blue-nav logout-button" id="logout-button">LOGOUT</span></div>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 search-full">
+                <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <a><i class="fas fa-search"></i></a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Gray navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2" aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="nav2">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="myAuctions.html">MYAUCTIONS</a>
+                    <a class="nav-link" href="overzicht.html">ART</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">MYBIDS</a>
+                    <a class="nav-link" href="search.html">ISEARCH</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="myAuctions.html">MYAUCTIONS</a>
                 </li>
-              </ul>
-              
-              <ul class="nav navbar-nav navbar-right">
-                  <li class="nav-item">
-                      <a class="nav-link taal" href="#">NL</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link taal" href="#">FR</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link taal active" href="#">EN</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MYBIDS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link taal" id="nl" href="#">NL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link taal" id="fr" href="#">FR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link taal active" id="en" href="#">EN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero -->
 
@@ -108,41 +160,40 @@
     <div class="decoration-round-profile"></div>
     <div class="overlay-profile">
         <div class="overlay-h3-profile">
-             <h3>Lorem Ipsum</h3>
+            <h3>Lorem Ipsum</h3>
         </div>
-       
-      <p class="overlay-text-profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-      <p class="overlay-text-profile">
-          Price: € 299,99
-      </p>
+        <p class="overlay-text-profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-      </div>
+        <p class="overlay-text-profile">
+            Price: € 299,99
+        </p>
 
-      <div class="visit">
-          <p>VISIT AUCTION ></p>
-      </div>
+    </div>
 
-        <!-- breadcrumbs -->
-        <div class="container-fluid">
-            <p class="breadcrumbs">Home > Jasper Poppe > My auctions > New auction</p>
-        </div>
-        
-        <!-- FAQ -->
-        <div class="container-fluid">
-            <h2>Add a new auction</h2>
-        </div>
-        <div class="container-fluid auction">
+    <div class="visit">
+        <p>VISIT AUCTION ></p>
+    </div>
 
-          <div class="error-message"></div>
+    <!-- breadcrumbs -->
+    <div class="container-fluid">
+        <p class="breadcrumbs">Home > Jasper Poppe > My auctions > New auction</p>
+    </div>
 
-            <form id="auction-form" class="example" method="post">
+    <!-- FAQ -->
+    <div class="container-fluid">
+        <h2>Add a new auction</h2>
+    </div>
+    <div class="container-fluid auction">
 
-              <div class="row">
+        <div class="error-message"></div>
+
+        <form id="auction-form" class="example" method="post">
+
+            <div class="row">
                 <div class="form-group col-md-6">
-                       
-                          <select class="wide" name="select-style">
+
+                    <select class="wide" name="select-style">
                             <option>Style</option>
                             <option>Abstract</option>
                             <option>African American</option>
@@ -158,315 +209,320 @@
                             <option>Urban</option>
                             <option>Vintage Photographs</option>
                           </select>
-                    
-                       
-                      </div>
 
 
-              </div>
-    
+                </div>
 
-              <div class="row">
-                    <div class="form-group col-md-6">
-                      <label for="title">Auction title</label>
-                      <i class="fa fa-check" id="success"></i>
-                      <input type="text" class="form-control" id="title" name="title" placeholder="Auction title">
-                      
-                    </div>
-                    <div class="form-group col-md-3">
-                      <label for="year">Year</label>
-                      <input type="text" class="form-control" id="year" name="year" placeholder="XXXX">
-                    </div>
 
-              </div>
-             
+            </div>
 
-              <div class="row">
-                  <div class="form-group col-md-3">
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="title">Auction title</label>
+                    <i class="fa fa-check" id="success"></i>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Auction title">
+
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="year">Year</label>
+                    <input type="text" class="form-control" id="year" name="year" placeholder="XXXX">
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-md-3">
                     <label for="width">Width</label>
                     <input type="text" class="form-control" id="width" name="width" placeholder="XXXX">
-                  </div>
-
-                  <div class="form-group col-md-3">
-                    <label for="height">Height</label>
-                    <input type="text" class="form-control" id="height" name="height" placeholder="XXXX">
-                  </div>
-
-                  <div class="form-group col-md-3">
-                    <label for="depth">Depth (optional)</label>
-                    <input type="text" class="form-control" id="depth" name="depth" placeholder="XXXX">
-                  </div>
-
-              </div>
-
-
-              <div class="row">
-                 <div class="form-group col-md-9">
-                <label for="description">Description</label>
-                <textarea class="form-control" id="description" name="description" rows="3" placeholder="Describe your auction as thorough as possible."></textarea>
-              </div>
-              </div>
-
-             
-              <div class="row">
-                   <div class="form-group col-md-9">
-                <label for="condition">Condition</label>
-                <textarea class="form-control" id="condition" name="condition" rows="3" placeholder="What's the condition of this artwork?"></textarea>
-              </div>
-              </div>
-           
-
-              <div class="row">
-                    <div class="form-group col-md-9">
-                  <label for="origin">Origin</label>
-                  <input type="text" class="form-control" id="origin" name="origin" placeholder="What's the origin of the artwork?">
                 </div>
-              </div>
-           
-
-              <div class="row">
-                 <div class="form-group col-md-9">
-                <label for="photos">Photos</label>
-                <p>Please upload one picture with the signature of the artwork and one picture of the artwork.
-                    You can upload up to 3 pictures with a maximum of 10MB each.
-                </p>
-                
-      
-
-                <div class="btn-group">
-                  <div class="btn btn-primary col-md-3">UPLOAD IMAGE OF THE ARTWORK</div>
-                  <div class="btn btn-primary col-md-3">UPLOAD IMAGE OF THE SIGNATURE</div>
-                  <div class="btn btn-primary col-md-3">OPTIONAL IMAGE</div>
-                </div>
-                    
-
-           
-                
-              </div>
-              </div>
-             
-
-              <h3>Pricing</h3>
-
-              <div class="row">
-                    <div class="form-group col-md-3">
-                    <label for="minPrice">Minimum estimate price</label>
-                    <input type="text" class="form-control" id="minPrice" placeholder="€ XXXX">
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="maxPrice">Maximum estimate price</label>
-                    <input type="text" class="form-control" id="maxPrice" placeholder="€ XXXX">
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="buyoutPrice">Buyout price (optional)</label>
-                    <input type="text" class="form-control" id="buyoutPrice" placeholder="€ XXXX">
-                  </div>
-              </div>
-             
-
-              <div class="row">
 
                 <div class="form-group col-md-3">
-                  <label for="endDate">End date</label>
-                  <input type="date" class="form-control" id="endDate">
+                    <label for="height">Height</label>
+                    <input type="text" class="form-control" id="height" name="height" placeholder="XXXX">
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="depth">Depth (optional)</label>
+                    <input type="text" class="form-control" id="depth" name="depth" placeholder="XXXX">
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-md-9">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3" placeholder="Describe your auction as thorough as possible."></textarea>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-md-9">
+                    <label for="condition">Condition</label>
+                    <textarea class="form-control" id="condition" name="condition" rows="3" placeholder="What's the condition of this artwork?"></textarea>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-md-9">
+                    <label for="origin">Origin</label>
+                    <input type="text" class="form-control" id="origin" name="origin" placeholder="What's the origin of the artwork?">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-md-9">
+                    <label for="photos">Photos</label>
+                    <p>Please upload one picture with the signature of the artwork and one picture of the artwork. You can upload up to 3 pictures with a maximum of 10MB each.
+                    </p>
+
+
+
+                    <div class="btn-group">
+                        <div class="btn btn-primary col-md-3">UPLOAD IMAGE OF THE ARTWORK</div>
+                        <div class="btn btn-primary col-md-3">UPLOAD IMAGE OF THE SIGNATURE</div>
+                        <div class="btn btn-primary col-md-3">OPTIONAL IMAGE</div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+            <h3>Pricing</h3>
+
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="minPrice">Minimum estimate price</label>
+                    <input type="text" class="form-control" id="minPrice" placeholder="€ XXXX">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="maxPrice">Maximum estimate price</label>
+                    <input type="text" class="form-control" id="maxPrice" placeholder="€ XXXX">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="buyoutPrice">Buyout price (optional)</label>
+                    <input type="text" class="form-control" id="buyoutPrice" placeholder="€ XXXX">
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="form-group col-md-3">
+                    <label for="endDate">End date</label>
+                    <input type="date" class="form-control" id="endDate">
                 </div>
 
                 <div class="col-md-6">
-                   <h4>Attention</h4>
-              <p>You can not change the information after adding this auction.
-                  If you're not certain about the information of your artwork, please ask for help.
-                  We will answer your question as soon as possible.
-              </p>
+                    <h4>Attention</h4>
+                    <p>You can not change the information after adding this auction. If you're not certain about the information of your artwork, please ask for help. We will answer your question as soon as possible.
+                    </p>
                 </div>
-             
 
-              </div>
-              
-              
-            
 
-              <div class="row">
-                    <div class="form-check col-md-8">
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="form-check col-md-8">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <p> I Agree To <a href="#">The Terms & Conditions</a></p>
-                  </div>
-              </div>
-             
-
-              <div class="form-group">
-                  <input class="btn btn-success" id="submit-button" type="submit" value="ADD AUCTION">
-                  
-                  
-              </div>
-            
-              <p><a href="faq.html">ASK A QUESTION ></a> </p>
+                </div>
+            </div>
 
 
-            </form>
+            <div class="form-group">
+                <input class="btn btn-success" id="submit-button" type="submit" value="ADD AUCTION">
 
-        </div>
 
-       
+            </div>
+
+            <p><a href="faq.html">ASK A QUESTION ></a> </p>
+
+
+        </form>
+
+    </div>
+
+
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-            
+        <div class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
 
-                  <div class="col-sm-3">
-                      <h6 class="top">HELP</h6>
-                      <ul>
-                          <li><a href="">Login</a></li>
-                          <li><a href="">Register</a></li>
-                      </ul>
-                      
-                      <h6>HELP</h6>
-                      <ul>
-                          <li><a href="">Terms of Service</a></li>
-                          <li><a href="">Privacy Policy</a></li>
-                          <li><a href="">FAQ</a></li>
-                          <li><a href="">Contact Us</a></li>
-                          <li><a href="">About Us</a></li>
-                      </ul>
-                      
-                      <h6>LANGUAGES</h6>
-                      <ul>
-                          <li><a href="">Nederlands</a></li>
-                          <li><a href="">Français</a></li>
-                          <li><a href="">English</a></li>
-                      </ul>
-                  </div> 
-                  <div class="col-sm-3">
-                      <h6 class="top">STYLE</h6>
-                      <ul>
-                          <li><a href="">Abstract</a></li>
-                          <li><a href="">African American</a></li>
-                          <li><a href="">Asian Contemporary</a></li>
-                          <li><a href="">Conceptual</a></li>
-                          <li><a href="">Contemporary</a></li>
-                          <li><a href="">Emerging Artists</a></li>
-                          <li><a href="">Figurative</a></li>
-                          <li><a href="">Middle Eastern Contemporary</a></li>
-                          <li><a href="">Minimalism</a></li>
-                          <li><a href="">Modern</a></li>
-                          <li><a href="">Pop</a></li>
-                          <li><a href="">Urban</a></li>
-                          <li><a href="">Vintage Photographs</a></li>
-                      </ul>
-                      
-                      <h6>STYLE</h6>
-                      <ul>
-                          <li><a href="">Design</a></li>
-                          <li><a href="">Paintings and Work on Paper</a></li>
-                          <li><a href="">Photographs</a></li>
-                          <li><a href="">Prints and Multiples</a></li>
-                          <li><a href="">Sculpture</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-sm-3">
-                      <h6 class="top">PRICE</h6>
-                      <ul>
-                          <li><a href="">Up to 5,000</a></li>
-                          <li><a href="">5,000-10,000</a></li>
-                          <li><a href="">10,000-25,000</a></li>
-                          <li><a href="">25,000-50,000</a></li>
-                          <li><a href="">50,000-100,000</a></li>
-                          <li><a href="">Above</a></li>
-                      </ul>
-                      
-                      <h6>ERA</h6>
-                      <ul>
-                          <li><a href="">Pre-War</a></li>
-                          <li><a href="">1940s-1950s</a></li>
-                          <li><a href="">1960s-1980s</a></li>
-                          <li><a href="">1990s-Present</a></li>
-                      </ul>
-                      
-                      <h6>ENDINGS</h6>
-                      <ul>
-                          <li><a href="">Ending this week</a></li>
-                          <li><a href="">Newly Listed</a></li>
-                          <li><a href="">Purchase Now</a></li>
-                          <li><a href="">1990s-Present</a></li>
-                      </ul>
-                  </div> 
-              
-                <div class="col-sm-3 footer-rechts">
-                    <h6 class="top">FIND WHAT YOU NEED.</h6>
-                    <form class="form-inline my-2 my-lg-0 footer-search">
-                      <input class="form-control search mr-sm-2 f-search" type="text" placeholder="Search" aria-label="Search">
-                      <a><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </form>
-                    
-                    <h6>CONTACT</h6>
 
-                    <ul>
-                      <li>Landoretti ART</li>
-                      <li>Straatnaam xxx</li>
-                      <li>xxxx, Oostende</li>
-                    </ul>
-                   
-                    <ul>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> +xx(0)x xxx xx xx</li>
-                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="">info@landoretti.com</a></li>
-                    </ul>
-                    <ul class="list-unstyled">
-                        <li class="f-icon"><a href=""><img src="img/facebook.png" alt="facebook icon"></a></li>
-                        <li class="f-icon"><a href=""><img src="img/twitter.png" alt="twitter icon"></a></li>
-                        <li class="f-icon"><a href=""><img src="img/youtube.png" alt="youtube icon"></a></li>
-                        <li class="f-icon"><a href=""><img src="img/google-plus.png" alt="google plus icon"></a></li>
-                    </ul>
-                    
-                    <p class="copy">&copy; 2013 Studio6, Inc. All rights reserved.</p>
+                    <div class="col-sm-3">
+                        <h6 class="top">HELP</h6>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+
+                        <h6>HELP</h6>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+
+                        <h6>LANGUAGES</h6>
+                        <ul>
+                            <li><a href="#">Nederlands</a></li>
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6 class="top">STYLE</h6>
+                        <ul>
+                            <li><a href="#">Abstract</a></li>
+                            <li><a href="#">African American</a></li>
+                            <li><a href="#">Asian Contemporary</a></li>
+                            <li><a href="#">Conceptual</a></li>
+                            <li><a href="#">Contemporary</a></li>
+                            <li><a href="#">Emerging Artists</a></li>
+                            <li><a href="#">Figurative</a></li>
+                            <li><a href="#">Middle Eastern Contemporary</a></li>
+                            <li><a href="#">Minimalism</a></li>
+                            <li><a href="#">Modern</a></li>
+                            <li><a href="#">Pop</a></li>
+                            <li><a href="#">Urban</a></li>
+                            <li><a href="#">Vintage Photographs</a></li>
+                        </ul>
+
+                        <h6>STYLE</h6>
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Paintings and Work on Paper</a></li>
+                            <li><a href="#">Photographs</a></li>
+                            <li><a href="#">Prints and Multiples</a></li>
+                            <li><a href="#">Sculpture</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6 class="top">PRICE</h6>
+                        <ul>
+                            <li><a href="#">Up to 5,000</a></li>
+                            <li><a href="#">5,000-10,000</a></li>
+                            <li><a href="#">10,000-25,000</a></li>
+                            <li><a href="#">25,000-50,000</a></li>
+                            <li><a href="#">50,000-100,000</a></li>
+                            <li><a href="#">Above</a></li>
+                        </ul>
+
+                        <h6>ERA</h6>
+                        <ul>
+                            <li><a href="#">Pre-War</a></li>
+                            <li><a href="#">1940s-1950s</a></li>
+                            <li><a href="#">1960s-1980s</a></li>
+                            <li><a href="#">1990s-Present</a></li>
+                        </ul>
+
+                        <h6>ENDINGS</h6>
+                        <ul>
+                            <li><a href="#">Ending this week</a></li>
+                            <li><a href="#">Newly Listed</a></li>
+                            <li><a href="#">Purchase Now</a></li>
+                            <li><a href="#">1990s-Present</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3 footer-rechts">
+                        <h6 class="top">FIND WHAT YOU NEED.</h6>
+                        <form class="form-inline my-2 my-lg-0 footer-search">
+                            <input class="form-control search mr-sm-2 f-search" type="text" placeholder="Search" aria-label="Search">
+                            <a><i class="fas fa-search"></i></a>
+                        </form>
+
+                        <h6>CONTACT</h6>
+
+                        <ul>
+                            <li>Landoretti ART</li>
+                            <li>Straatnaam xxx</li>
+                            <li>xxxx, Oostende</li>
+                        </ul>
+
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +xx(0)x xxx xx xx</li>
+                            <li><i class="far fa-envelope"></i><a href="#"> info@landoretti.com</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li class="f-icon">
+                                <a href="https://facebook.com"><img src="img/facebook.png" alt="facebook icon"></a>
+                            </li>
+                            <li class="f-icon">
+                                <a href="https://twitter.com"><img src="img/twitter.png" alt="twitter icon"></a>
+                            </li>
+                            <li class="f-icon">
+                                <a href="https://youtube.com"><img src="img/youtube.png" alt="youtube icon"></a>
+                            </li>
+                            <li class="f-icon">
+                                <a href="https://google.com"><img src="img/google-plus.png" alt="google plus icon"></a>
+                            </li>
+                        </ul>
+
+                        <p class="copy">&copy; 2013 Studio6, Inc. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
-        
+
         <!-- Gray navbar -->
-         <a href="#"><img class="logo2" src="img/logo2.jpg" alt="logo Landoretti"></a>
+        <a href="#"><img class="logo2" src="img/logo2.jpg" alt="logo Landoretti"></a>
         <nav class="navbar footer-nav navbar-expand-lg navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav3" aria-controls="nav3" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav3" aria-controls="nav3" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="nav3">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ART</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ISEARCH</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">MYAUCTIONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">MYBIDS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-              </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="nav3">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="overzicht.html">ART</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">ISEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myAuctions.html">MYAUCTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MYBIDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item">
-                    <a class="nav-link taal" href="#">NL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link taal" href="#">FR</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link taal" href="#">EN</a>
-                </li>
-            </ul>
-          </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link taal" href="#">NL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link taal" href="#">FR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link taal" href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        
-    </footer>    
+
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -486,7 +542,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
     <script type="text/javascript" src="js/validation.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+</body>
 
-
-  </body>
 </html>
