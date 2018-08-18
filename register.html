@@ -89,7 +89,7 @@
         <div class="collapse navbar-collapse" id="nav1-welcome">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="watchlist.html">
+                    <a class="nav-link" href="myWatchlist.html">
                         <i class="fas fa-bars"></i><span class="blue-nav1"> WATCHLIST</span>
                         <span class="sr-only">(current)</span>
                     </a>
@@ -171,12 +171,16 @@
     </div>
 
     <div class="visit">
-        <p>VISIT AUCTION ></p>
+        <a href="#">
+            <p>VISIT AUCTION <i class="fas fa-angle-right"></i></p>
+        </a>
     </div>
 
     <!-- breadcrumbs -->
     <div class="container-fluid">
-        <p class="breadcrumbs">Home > Auctions > Salvador Dali > Dance of Time |||</p>
+        <p class="breadcrumbs">
+            <a href="index.html">Home</a> >
+            <a href="myAuctions.html">Auctions </a> > Salvador Dali > Dance of Time |||</p>
     </div>
 
     <!-- FAQ -->
@@ -190,12 +194,12 @@
             <div class="row">
 
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-name">Company or name</label>
                     <input type="text" class="form-control" id="reg-name" placeholder="Studio 6">
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-email">Email</label>
                     <input type="email" class="form-control" id="reg-email" placeholder="name@provider.com">
                 </div>
@@ -204,12 +208,12 @@
 
             <div class="row">
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-pass">Password</label>
                     <input type="password" class="form-control" id="reg-pass" placeholder="Password">
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-pass-conf">Password confirmation</label>
                     <input type="password" class="form-control" id="reg-pass-conf" placeholder="Password">
                 </div>
@@ -217,9 +221,9 @@
 
 
             <div class="row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-country">Country</label>
-                    <select class="form-control" id="reg-country">
+                    <select class="form-control wide" id="reg-country">
                           <option>Belgium</option>
                           <option>2</option>
                           <option>3</option>
@@ -228,12 +232,12 @@
                         </select>
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                     <label for="reg-zip">Zip Code</label>
                     <input type="text" class="form-control" id="reg-zip" placeholder="8400">
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                     <label for="reg-city">City</label>
                     <input type="text" class="form-control" id="reg-city" placeholder="Oostende">
                 </div>
@@ -243,25 +247,29 @@
 
             <div class="row">
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-address">Address</label>
                     <input type="text" class="form-control" id="reg-address" placeholder="Zuidstraat 15 C4">
                 </div>
 
-                <div class="form-group col-md-4">
-                    <label for="reg-phone">Phone Number</label>
-                    <input type="text" class="form-control" id="reg-phone" placeholder="+ 32 XX XXX XX XX">
+                <div class="form-group col-md-1">
+                    <label for="reg-phone">Phone</label>
+                    <input type="text" class="form-control" id="reg-phone" placeholder="+ 32">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="reg-phone">Number</label>
+                    <input type="text" class="form-control" id="reg-phone" placeholder="XX XXX XX XX">
                 </div>
 
             </div>
 
             <div class="row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-accnumber">Account number</label>
                     <input type="text" class="form-control" id="reg-accnumber" placeholder="XX XXX XX XX">
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="reg-vat">VAT-number</label>
                     <input type="text" class="form-control" id="reg-vat" placeholder="XX XXX XX XX">
                 </div>
@@ -270,7 +278,7 @@
 
             <div class="row">
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-12">
                     <label for="reg-payment">Alternative payment methods number</label>
                     <input type="text" class="form-control" id="reg-payment" placeholder="Lorem">
                 </div>
@@ -280,13 +288,13 @@
 
 
             <div class="row">
-                <div class="form-check">
+                <div class="form-check mt-3 mb-3">
                     <input type="checkbox" class="form-check-input" id="reg-agree">
                     <label class="form-check-label" for="reg-agree">I Agree To The Terms & Conditions</label>
                 </div>
 
             </div>
-            <button type="submit" class="btn btn-primary">REGISTER</button>
+            <button type="submit" class="btn btn-success">REGISTER</button>
 
         </form>
 
@@ -453,7 +461,7 @@
                         <a class="nav-link taal" href="#">FR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link taal" href="#">EN</a>
+                        <a class="nav-link taal active" href="#">EN</a>
                     </li>
                 </ul>
             </div>

@@ -3,58 +3,111 @@
 
 <head>
     <title>Landoretti</title>
-
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
-
+    <link rel="shortcut icon" type="image/jpg" href="dist/images/favicon.ico">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
-
     <link rel="stylesheet" href="css/flickity.css" media="screen">
-
 </head>
 
 <body id="faq">
 
-    <!-- White navbar -->
-    <a href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>
-    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light">
-        <!--<a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo Landoretti"></a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav1">
+    <a href="#"><img class="logo" src="dist/images/logo.png" alt="logo Landoretti"></a>
+    <!-- White navbar : REGISTER -->
+    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light" id="nav1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-register" aria-controls="nav1-register" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="nav1-register">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="watchlist.html">
-                        <i class="fa fa-bars" aria-hidden="true"></i><span class="blue-nav1"> WATCHLIST</span>
+                    <a class="nav-link" href="#">
+                        <span class="blue-nav"> REGISTER</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="line"><span class="blue-nav" id="login-button">LOGIN</span></div>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 search-full">
+                <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <a><i class="fas fa-search"></i></a>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- White navbar : LOGIN FORM -->
+
+    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light inactive" id="nav2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-login" aria-controls="nav1-login" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1-login">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span class="blue-nav"> REGISTER</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <form class="form-inline my-2 my-lg-0 login-user">
+                    <input class="form-control mr-sm-2 " type="text" placeholder="User" aria-label="User">
+                </form>
+
+                <form class="form-inline my-2 my-lg-0 login-user">
+                    <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+                </form>
+
+                <button class="btn btn-primary go-login-button" id="go-button"><i class="fas fa-angle-right"></i></button>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 search-full">
+                <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <a><i class="fas fa-search"></i></a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- White navbar : LOGGED IN -->
+    <nav class="navbar lijntje navbar-expand-md navbar-light bg-light inactive" id="nav3">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1-welcome" aria-controls="nav1-welcome" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1-welcome">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="myWatchlist.html">
+                        <i class="fas fa-bars"></i><span class="blue-nav1"> WATCHLIST</span>
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="profile.html">
-                        <div class="line"><i class="fa fa-user" aria-hidden="true"></i><span class="blue-nav"> PROFILE</span></div>
+                        <div class="line"><i class="fas fa-user"></i><span class="blue-nav"> PROFILE</span></div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <div class="line"><span class="blue-nav">LOGOUT</span></div>
+                        <div class="line"><span class="blue-nav logout-button" id="logout-button">LOGOUT</span></div>
                     </a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0 search-full">
                 <input class="form-control search mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <a><i class="fa fa-search  fa-lg" aria-hidden="true"></i></a>
+                <a><i class="fas fa-search"></i></a>
             </form>
         </div>
     </nav>
@@ -88,18 +141,17 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link taal" href="#">NL</a>
+                    <a class="nav-link taal" id="nl" href="#">NL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link taal" href="#">FR</a>
+                    <a class="nav-link taal" id="fr" href="#">FR</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link taal active" href="#">EN</a>
+                    <a class="nav-link taal active" id="en" href="#">EN</a>
                 </li>
             </ul>
         </div>
     </nav>
-
     <!-- Hero -->
 
     <div class="hero-image">
@@ -119,12 +171,14 @@
     </div>
 
     <div class="visit">
-        <p>VISIT AUCTION ></p>
+        <a href="#">
+            <p>VISIT AUCTION <i class="fas fa-angle-right"></i></p>
+        </a>
     </div>
 
     <!-- breadcrumbs -->
     <div class="container-fluid">
-        <p class="breadcrumbs">Home > Frequently Asked Questions</p>
+        <p class="breadcrumbs"><a href="index.html">Home</a> > Frequently Asked Questions</p>
     </div>
 
     <!-- FAQ -->
@@ -462,19 +516,21 @@
                         <a class="nav-link taal" href="#">FR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link taal" href="#">EN</a>
+                        <a class="nav-link taal active" href="#">EN</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="dist/js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/validation.js"></script>
+    <script type="text/javascript" src="dist/js/custom.js"></script>
 </body>
 
 </html>

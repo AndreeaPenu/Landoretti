@@ -108,6 +108,12 @@ img.popweek {
     color: $white;
 }
 
+form {
+    .fa-search {
+        color: black;
+    }
+}
+
 h1 {
     text-align: center;
     padding: 40px 0;
@@ -374,12 +380,12 @@ body {
     width: 28%;
     height: 269px!important;
     margin-right: 10px;
-    background: #8C8;
+    // background: #8C8;
     counter-increment: gallery-cell;
 }
 
 .gallery-cell.is-selected {
-    background: #ED2;
+    //  background: #ED2;
 }
 
 
@@ -839,7 +845,7 @@ td {
     }
 }
 
-.selected {
+.filter-li.selected {
     text-decoration: underline;
     &:after {
         content: "\f057";
@@ -977,7 +983,7 @@ td {
     font-size: 20px;
 }
 
-.auction .form-control {
+.form-control {
     background-color: #f7f7f7;
     padding: .375rem .75rem;
     border-radius: 1px;
