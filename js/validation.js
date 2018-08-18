@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
     $("#auction-form").validate({
         rules: {
             title: {
@@ -8,18 +8,34 @@ $(function(){
                 required: true
             }
         },
-        errorPlacement: function (error, element) {
+        errorPlacement: function(error, element) {
             var name = $(element).attr("name");
             $('.error-message').show();
-            $('.error-message').append( " <li> Please enter a " + name + " for your auction </li>" );
+            $('.error-message').append(" <li> Please enter a " + name + " for your auction </li>");
         },
         success: function(element) {
-            $('#success').css('display','block');
-          }
+            $('#success').css('display', 'block');
+        }
     });
 });
 
-
-
-
-
+$(function() {
+    $("#register-form").validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true
+            }
+        },
+        errorPlacement: function(error, element) {
+            var name = $(element).attr("name");
+            $('.error-message').show();
+            $('.error-message').append(" <li> Please fill in an existing " + name + " </li>");
+        },
+        success: function(element) {
+            $('#success').css('display', 'block');
+        }
+    });
+});

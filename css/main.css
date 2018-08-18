@@ -1064,6 +1064,8 @@ footer .col-sm-3 {
   float: right;
   font-weight: 700;
   margin: 5px; }
+  .btns-right a {
+    color: #0a1e75; }
 
 .btn-primary {
   border-radius: 0;
