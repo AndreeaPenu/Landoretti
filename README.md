@@ -79,7 +79,7 @@ Has a round decoration followed by an overlay class with overlay text. Adds a ti
         <p class="overlay-text-cta">Text goes here.</p>
     </div>
     <div class="visit">
-        <a href="#"><p>VISIT AUCTION ></p></a>
+        <a href="#"><p>VISIT AUCTION <i class="fas fa-angle-right"></i></p></a>
     </div>
 ```
 
@@ -90,7 +90,7 @@ The breadcrumbs class adds the right color
 
 ```
     <div class="container-fluid">
-        <p class="breadcrumbs">Home > Frequently Asked Questions</p>
+        <p class="breadcrumbs"><a href="index.html">Home</a> > Frequently Asked Questions</p>
     </div>
 ```
 	

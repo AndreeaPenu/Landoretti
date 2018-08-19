@@ -6,6 +6,8 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 
 var elixir = require('laravel-elixir');
 
+const minifyCss = require("gulp-minify-css");
+
 elixir(function(mix) {
     mix.sass('main.scss');
 });
@@ -35,10 +37,18 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['imageMin', 'minify', 'sass']);
+// minify css
+gulp.task('minify-css', function() {
+    gulp.src('css/*.css')
+        .pipe(minifyCss())
+        .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('default', ['imageMin', 'minify', 'sass', 'minify-css']);
 
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['minify']);
     gulp.watch('img/*', ['imageMin']);
     gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('css/*.css', ['css']);
 });
